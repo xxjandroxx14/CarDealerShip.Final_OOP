@@ -28,5 +28,20 @@ namespace CarDealerShip.Final_OOP
         {
 
         }
+
+        private void comboFinnance_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxMonths_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Vios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

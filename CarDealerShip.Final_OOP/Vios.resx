@@ -5742,7 +5742,8 @@
 </value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>SPECS:
+    <value>SRP:900000
+SPECS:
 
 Overall Dimensions (mm)    4,420 x 1,730 x 1,475
 Wheelbase (mm)	            2,550
@@ -5766,13 +5767,10 @@ Chasis
 Front Brake/ Rear Brake	Fr: Ventilated Discs Rr: Drum
 Tires			185/60 R15 Alloy</value>
   </data>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="pictureBoxViosInterior.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAANVCAIAAACoFcTeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAA/7JJREFUeF7M/YV3G9m77g+mO2gm2WK02JIssNgyy7KYmRnMDHEcTqf5S+fSzB34
+        vAAADrwBlbxySQAA/7JJREFUeF7M/YV3G9m77g+mO2gm2WK02JIssNgyy7KYmRnMDHEcTqf5S+fSzB34
         T2fteuWdnZKT0+ec+5uZtZ6lVSqVSiWq2p/9vPBo2aJetqhd1oUVm8ZlXXCaVXaTwmqQ2U0Kx5LSaVY5
         lpRWg8y8OG9enLfopSateEknMWnFhgUhll4tMCwITVqxSSs2akR6tUCn5GkVXK2Cq1PyFlV8tZQ1z58S
         ccZ5c8Oc6efcmRccxgv2zHPm5DPG2OOxoUcvnjwaevpobOgRa3ZcImQtamR2y+KKc2l12Qxy2gzWJe2S

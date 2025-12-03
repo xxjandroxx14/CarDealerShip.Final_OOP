@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vios));
             pictureBoxVios = new PictureBox();
             richTextBox1 = new RichTextBox();
             label1 = new Label();
-            contextMenuStrip1 = new ContextMenuStrip(components);
             pictureBoxViosInterior = new PictureBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            buttonCalculate = new Button();
+            buttonFinnace = new Button();
+            label3 = new Label();
+            button1 = new Button();
+            label2 = new Label();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
             SuspendLayout();
@@ -70,62 +70,81 @@
             label1.TabIndex = 3;
             label1.Text = "Price: 900000";
             // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
-            // 
             // pictureBoxViosInterior
             // 
             pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
-            pictureBoxViosInterior.Location = new Point(23, 236);
+            pictureBoxViosInterior.Location = new Point(12, 236);
             pictureBoxViosInterior.Name = "pictureBoxViosInterior";
-            pictureBoxViosInterior.Size = new Size(308, 201);
+            pictureBoxViosInterior.Size = new Size(372, 201);
             pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxViosInterior.TabIndex = 5;
             pictureBoxViosInterior.TabStop = false;
             // 
-            // comboBox1
+            // buttonFinnace
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "20% 181,600", "30% 227,000" });
-            comboBox1.Location = new Point(390, 330);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 6;
+            buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
+            buttonFinnace.Location = new Point(390, 369);
+            buttonFinnace.Name = "buttonFinnace";
+            buttonFinnace.Size = new Size(75, 23);
+            buttonFinnace.TabIndex = 8;
+            buttonFinnace.Text = "Finnace";
+            buttonFinnace.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // label3
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "60 MONTHS", "", "48 MONTHS" });
-            comboBox2.Location = new Point(530, 330);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 7;
+            label3.AutoSize = true;
+            label3.Location = new Point(418, 333);
+            label3.Name = "label3";
+            label3.Size = new Size(99, 15);
+            label3.TabIndex = 11;
+            label3.Text = "Payment Method";
             // 
-            // buttonCalculate
+            // button1
             // 
-            buttonCalculate.Location = new Point(684, 330);
-            buttonCalculate.Name = "buttonCalculate";
-            buttonCalculate.Size = new Size(75, 23);
-            buttonCalculate.TabIndex = 8;
-            buttonCalculate.Text = "Calculate";
-            buttonCalculate.UseVisualStyleBackColor = true;
+            button1.ImageAlign = ContentAlignment.BottomCenter;
+            button1.Location = new Point(471, 369);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 13;
+            button1.Text = "Cash";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(632, 333);
+            label2.Name = "label2";
+            label2.Size = new Size(99, 15);
+            label2.TabIndex = 14;
+            label2.Text = "Payment Method";
+            // 
+            // button2
+            // 
+            button2.ImageAlign = ContentAlignment.BottomCenter;
+            button2.Location = new Point(632, 369);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 15;
+            button2.Text = "Cash";
+            button2.UseVisualStyleBackColor = true;
             // 
             // Vios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(buttonCalculate);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(button2);
+            Controls.Add(label2);
+            Controls.Add(button1);
+            Controls.Add(label3);
+            Controls.Add(buttonFinnace);
             Controls.Add(pictureBoxViosInterior);
             Controls.Add(label1);
             Controls.Add(richTextBox1);
             Controls.Add(pictureBoxVios);
             Name = "Vios";
             Text = "Vios";
+            Load += Vios_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).EndInit();
             ResumeLayout(false);
@@ -138,11 +157,11 @@
         private Button buttonBuy;
         private RichTextBox richTextBox1;
         private Label label1;
-        private Button buttonCalculate;
+        private Button buttonFinnace;
         private Button button1;
-        private ContextMenuStrip contextMenuStrip1;
         private PictureBox pictureBoxViosInterior;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private Label label3;
+        private Label label2;
+        private Button button2;
     }
 }

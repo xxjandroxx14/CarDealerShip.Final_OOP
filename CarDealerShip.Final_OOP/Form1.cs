@@ -82,7 +82,8 @@ namespace CarDealerShip.Final_OOP
 
                 Menu menu = new Menu();
                 menu.Show();
-                this.Hide(); // Change is here: Hides Form1 instead of closing it
+                this.Hide();
+
             }
             else
             {
@@ -92,6 +93,21 @@ namespace CarDealerShip.Final_OOP
                     MessageBoxIcon.Error);
             }
         }
-    }
 
+
+
+        private void buttonAdminList_Click(object sender, EventArgs e)
+        {
+            UserRepository repository = new UserRepository();
+            List<UserModel> allUsers = repository.GetAllUsers();
+
+            ListForm listForm = new ListForm();
+            listForm.LoadUserData(allUsers);
+
+            listForm.Show();
+            this.Hide();
+        }
+    }
 }
+
+

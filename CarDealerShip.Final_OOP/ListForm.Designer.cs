@@ -28,71 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonView = new Button();
             datagridviewClient = new DataGridView();
             buttonDelete = new Button();
             buttonUpdate = new Button();
-            textBoxEmailList = new TextBox();
-            textBoxPasswordList = new TextBox();
+            txtEmail = new TextBox();
+            txtPassword = new TextBox();
             label1 = new Label();
             Password = new Label();
             ((System.ComponentModel.ISupportInitialize)datagridviewClient).BeginInit();
             SuspendLayout();
             // 
-            // buttonView
-            // 
-            buttonView.Location = new Point(256, 306);
-            buttonView.Name = "buttonView";
-            buttonView.Size = new Size(75, 23);
-            buttonView.TabIndex = 0;
-            buttonView.Text = "View";
-      
-            // 
             // datagridviewClient
             // 
             datagridviewClient.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            datagridviewClient.Location = new Point(256, 85);
+            datagridviewClient.Location = new Point(225, 71);
             datagridviewClient.Name = "datagridviewClient";
-            datagridviewClient.Size = new Size(434, 173);
+            datagridviewClient.Size = new Size(329, 187);
             datagridviewClient.TabIndex = 1;
             // 
             // buttonDelete
             // 
-            buttonDelete.Location = new Point(384, 306);
+            buttonDelete.Location = new Point(256, 288);
             buttonDelete.Name = "buttonDelete";
             buttonDelete.Size = new Size(75, 23);
             buttonDelete.TabIndex = 2;
-            buttonDelete.Text = "Delete Client";
+            buttonDelete.Text = "Delete ";
             buttonDelete.UseVisualStyleBackColor = true;
             // 
             // buttonUpdate
             // 
-            buttonUpdate.Location = new Point(491, 306);
+            buttonUpdate.Location = new Point(388, 288);
             buttonUpdate.Name = "buttonUpdate";
             buttonUpdate.Size = new Size(75, 23);
             buttonUpdate.TabIndex = 3;
             buttonUpdate.Text = "Update";
             buttonUpdate.UseVisualStyleBackColor = true;
- 
+            buttonUpdate.Click += buttonUpdate_Click;
             // 
-            // textBoxEmailList
+            // txtEmail
             // 
-            textBoxEmailList.Location = new Point(129, 85);
-            textBoxEmailList.Name = "textBoxEmailList";
-            textBoxEmailList.Size = new Size(100, 23);
-            textBoxEmailList.TabIndex = 4;
+            txtEmail.Location = new Point(102, 111);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(100, 23);
+            txtEmail.TabIndex = 4;
+            txtEmail.TextChanged += textBoxEmailList_TextChanged;
             // 
-            // textBoxPasswordList
+            // txtPassword
             // 
-            textBoxPasswordList.Location = new Point(129, 160);
-            textBoxPasswordList.Name = "textBoxPasswordList";
-            textBoxPasswordList.Size = new Size(100, 23);
-            textBoxPasswordList.TabIndex = 5;
+            txtPassword.Location = new Point(102, 155);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(100, 23);
+            txtPassword.TabIndex = 5;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(39, 88);
+            label1.Location = new Point(48, 111);
             label1.Name = "label1";
             label1.Size = new Size(36, 15);
             label1.TabIndex = 6;
@@ -101,7 +92,7 @@
             // Password
             // 
             Password.AutoSize = true;
-            Password.Location = new Point(39, 163);
+            Password.Location = new Point(39, 155);
             Password.Name = "Password";
             Password.Size = new Size(57, 15);
             Password.TabIndex = 7;
@@ -114,12 +105,11 @@
             ClientSize = new Size(800, 450);
             Controls.Add(Password);
             Controls.Add(label1);
-            Controls.Add(textBoxPasswordList);
-            Controls.Add(textBoxEmailList);
+            Controls.Add(txtPassword);
+            Controls.Add(txtEmail);
             Controls.Add(buttonUpdate);
             Controls.Add(buttonDelete);
             Controls.Add(datagridviewClient);
-            Controls.Add(buttonView);
             Name = "ListForm";
             Text = "ListForm";
             ((System.ComponentModel.ISupportInitialize)datagridviewClient).EndInit();
@@ -128,13 +118,11 @@
         }
 
         #endregion
-
-        private Button buttonView;
         private DataGridView datagridviewClient;
         private Button buttonDelete;
         private Button buttonUpdate;
-        private TextBox textBoxEmailList;
-        private TextBox textBoxPasswordList;
+        private TextBox txtEmail;
+        private TextBox txtPassword;
         private Label label1;
         private Label Password;
     }

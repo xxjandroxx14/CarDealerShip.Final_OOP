@@ -20,7 +20,22 @@ namespace CarDealerShip.Final_OOP
         private void vIOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Vios vios = new Vios();
-            vios.Show(); 
+            vios.Show();
+        }
+
+        private void cORROLAAXIOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CorrolaAxio corrolla = new CorrolaAxio();
+            corrolla.Show();
+
+
+        }
+
+        private void cAMRYToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Camry camry = new Camry();
+            camry.Show();
         }
     }
 }
