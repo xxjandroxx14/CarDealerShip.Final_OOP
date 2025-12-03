@@ -19,7 +19,12 @@ namespace CarDealerShip.Final_OOP
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureVios_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureViosInterior_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -125,14 +125,14 @@
             // exploreVehicleToolStripMenuItem
             // 
             exploreVehicleToolStripMenuItem.Name = "exploreVehicleToolStripMenuItem";
-            exploreVehicleToolStripMenuItem.Size = new Size(180, 22);
+            exploreVehicleToolStripMenuItem.Size = new Size(152, 22);
             exploreVehicleToolStripMenuItem.Text = "Explore Vehicle";
             // 
             // sedToolStripMenuItem
             // 
             sedToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { vIOSToolStripMenuItem, cORROLAAXIOToolStripMenuItem, cAMRYToolStripMenuItem });
             sedToolStripMenuItem.Name = "sedToolStripMenuItem";
-            sedToolStripMenuItem.Size = new Size(180, 22);
+            sedToolStripMenuItem.Size = new Size(152, 22);
             sedToolStripMenuItem.Text = "SEDAN";
             // 
             // vIOSToolStripMenuItem
@@ -158,7 +158,7 @@
             // 
             sUVToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { vELOZToolStripMenuItem, sEQUOIToolStripMenuItem });
             sUVToolStripMenuItem.Name = "sUVToolStripMenuItem";
-            sUVToolStripMenuItem.Size = new Size(180, 22);
+            sUVToolStripMenuItem.Size = new Size(152, 22);
             sUVToolStripMenuItem.Text = "SUV";
             // 
             // vELOZToolStripMenuItem
@@ -177,7 +177,7 @@
             // 
             pICKUPSToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tUNDRAToolStripMenuItem, hUILUXToolStripMenuItem, tACOMAToolStripMenuItem });
             pICKUPSToolStripMenuItem.Name = "pICKUPSToolStripMenuItem";
-            pICKUPSToolStripMenuItem.Size = new Size(180, 22);
+            pICKUPSToolStripMenuItem.Size = new Size(152, 22);
             pICKUPSToolStripMenuItem.Text = "PICK-UPS";
             // 
             // tUNDRAToolStripMenuItem
@@ -202,7 +202,7 @@
             // 
             rACINGToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { gRSUPRAToolStripMenuItem, gR86ToolStripMenuItem, gRYARISToolStripMenuItem });
             rACINGToolStripMenuItem.Name = "rACINGToolStripMenuItem";
-            rACINGToolStripMenuItem.Size = new Size(180, 22);
+            rACINGToolStripMenuItem.Size = new Size(152, 22);
             rACINGToolStripMenuItem.Text = "RACING";
             // 
             // gRSUPRAToolStripMenuItem
@@ -540,7 +540,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(576, 240);
+            ClientSize = new Size(576, 215);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Menu";
