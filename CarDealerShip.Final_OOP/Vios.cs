@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace CarDealerShip.Final_OOP
 {
-    public partial class Menu : Form
+    public partial class Vios : Form
+
     {
-        public Menu()
+        public string carpicturepath { get; set; }
+        public Vios()
         {
             InitializeComponent();
         }
 
-        private void vIOSToolStripMenuItem_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Vios vios = new Vios();
-            vios.Show(); 
+
         }
     }
 }

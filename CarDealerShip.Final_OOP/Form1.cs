@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+﻿
+using Microsoft.VisualBasic.ApplicationServices;
 using System.ComponentModel.DataAnnotations;
 using System.Windows.Forms;
 using System.Collections.Generic; // Required for List<UserModel>
@@ -18,7 +19,7 @@ namespace CarDealerShip.Final_OOP
             string email = textBoxEmail.Text;
             string password = textBoxPassword.Text;
             bool isInvalidInput = string.IsNullOrWhiteSpace(email)
-                               || string.IsNullOrWhiteSpace(password);
+                                   || string.IsNullOrWhiteSpace(password);
 
             if (isInvalidInput)
             {
@@ -38,9 +39,10 @@ namespace CarDealerShip.Final_OOP
                         "Success", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
 
-                   
-                    textBoxEmail.Text = "";
-                    textBoxPassword.Text = "";
+                    Menu menu = new Menu();
+                    menu.Show();
+                    this.Hide(); // Change is here: Hides Form1 instead of closing it
+
                 }
                 else
                 {
@@ -48,20 +50,48 @@ namespace CarDealerShip.Final_OOP
                         "Error", MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
+
             }
         }
 
-       
-        private void buttonViewUsers_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-           
-            UserRepository repository = new UserRepository();
-            List<UserModel> allUsers = repository.GetAllUsers();
+            string email = textBoxEmail.Text;
+            string password = textBoxPassword.Text;
 
-           
-            ListForm dataForm = new ListForm();
-            dataForm.LoadUserData(allUsers);
-            dataForm.ShowDialog();
+            bool isInvalidInput = string.IsNullOrWhiteSpace(email)
+                                   || string.IsNullOrWhiteSpace(password);
+
+            if (isInvalidInput)
+            {
+                MessageBox.Show("Please enter both email and password.",
+                    "Validation Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            UserRepository repository = new UserRepository();
+            bool isAuthenticated = repository.Authenticate(email, password);
+
+            if (isAuthenticated)
+            {
+                MessageBox.Show("Login successful! Welcome.",
+                    "Success", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                Menu menu = new Menu();
+                menu.Show();
+                this.Hide(); // Change is here: Hides Form1 instead of closing it
+            }
+            else
+            {
+                MessageBox.Show("Login failed. Check your email and password.",
+                    "Authentication Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
     }
+
 }
