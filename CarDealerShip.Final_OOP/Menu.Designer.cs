@@ -121,7 +121,8 @@
             tOYOTAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { exploreVehicleToolStripMenuItem, sedToolStripMenuItem, sUVToolStripMenuItem, pICKUPSToolStripMenuItem, rACINGToolStripMenuItem });
             tOYOTAToolStripMenuItem.Name = "tOYOTAToolStripMenuItem";
             tOYOTAToolStripMenuItem.Size = new Size(180, 22);
-            tOYOTAToolStripMenuItem.Text = "Z`";
+            tOYOTAToolStripMenuItem.Text = "TOYOTA";
+            tOYOTAToolStripMenuItem.Click += tOYOTAToolStripMenuItem_Click;
             // 
             // exploreVehicleToolStripMenuItem
             // 

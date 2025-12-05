@@ -45,6 +45,7 @@
             datagridviewClient.Name = "datagridviewClient";
             datagridviewClient.Size = new Size(329, 187);
             datagridviewClient.TabIndex = 1;
+            datagridviewClient.CellContentClick += datagridviewClient_CellContentClick;
             // 
             // buttonDelete
             // 

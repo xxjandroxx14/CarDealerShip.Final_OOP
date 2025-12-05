@@ -37,5 +37,10 @@ namespace CarDealerShip.Final_OOP
             Camry camry = new Camry();
             camry.Show();
         }
+
+        private void tOYOTAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

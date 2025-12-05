@@ -30,7 +30,6 @@
   <ItemGroup>
     <Folder Include="Honda\Racing\" />
     <Folder Include="Honda\Sedan\" />
-    <Folder Include="Honda\SUV\" />
     <Folder Include="Hyundai\Pick-Ups\" />
     <Folder Include="Hyundai\Racing\" />
     <Folder Include="Hyundai\Sedan\" />
@@ -44,9 +43,6 @@
     <Folder Include="Nissan\Sedan\" />
     <Folder Include="Nissan\SUV\" />
     <Folder Include="Toyota\Racing\" />
-    <Folder Include="Toyota\Pick-Ups\" />
-    <Folder Include="Toyota\SUV\" />
-    <Folder Include="Toyota\Sedan\" />
   </ItemGroup>
 
 </Project>

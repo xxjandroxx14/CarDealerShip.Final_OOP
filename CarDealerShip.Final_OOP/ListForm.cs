@@ -49,7 +49,7 @@ namespace CarDealerShip.Final_OOP
             string newEmail = txtEmail.Text.Trim();
             string newPassword = txtPassword.Text;
 
-          
+
             bool isEmailUnchanged = userToUpdate.Email.Equals(newEmail, StringComparison.OrdinalIgnoreCase);
             bool isPasswordUnchanged = userToUpdate.Password.Equals(newPassword);
 
@@ -72,7 +72,7 @@ namespace CarDealerShip.Final_OOP
                 }
             }
 
-     
+
             userToUpdate.Email = newEmail;
             userToUpdate.Password = newPassword;
 
@@ -120,6 +120,11 @@ namespace CarDealerShip.Final_OOP
         }
 
         private void textBoxEmailList_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void datagridviewClient_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
