@@ -140,21 +140,21 @@
             // vIOSToolStripMenuItem
             // 
             vIOSToolStripMenuItem.Name = "vIOSToolStripMenuItem";
-            vIOSToolStripMenuItem.Size = new Size(180, 22);
+            vIOSToolStripMenuItem.Size = new Size(158, 22);
             vIOSToolStripMenuItem.Text = "VIOS";
             vIOSToolStripMenuItem.Click += vIOSToolStripMenuItem_Click;
             // 
             // cORROLAAXIOToolStripMenuItem
             // 
             cORROLAAXIOToolStripMenuItem.Name = "cORROLAAXIOToolStripMenuItem";
-            cORROLAAXIOToolStripMenuItem.Size = new Size(180, 22);
+            cORROLAAXIOToolStripMenuItem.Size = new Size(158, 22);
             cORROLAAXIOToolStripMenuItem.Text = "CORROLA AXIO";
             cORROLAAXIOToolStripMenuItem.Click += cORROLAAXIOToolStripMenuItem_Click;
             // 
             // cAMRYToolStripMenuItem
             // 
             cAMRYToolStripMenuItem.Name = "cAMRYToolStripMenuItem";
-            cAMRYToolStripMenuItem.Size = new Size(180, 22);
+            cAMRYToolStripMenuItem.Size = new Size(158, 22);
             cAMRYToolStripMenuItem.Text = "CAMRY";
             cAMRYToolStripMenuItem.Click += cAMRYToolStripMenuItem_Click;
             // 
@@ -177,6 +177,7 @@
             sEQUOIToolStripMenuItem.Name = "sEQUOIToolStripMenuItem";
             sEQUOIToolStripMenuItem.Size = new Size(180, 22);
             sEQUOIToolStripMenuItem.Text = "SEQUOIA";
+            sEQUOIToolStripMenuItem.Click += sEQUOIToolStripMenuItem_Click;
             // 
             // pICKUPSToolStripMenuItem
             // 
@@ -213,19 +214,19 @@
             // gRSUPRAToolStripMenuItem
             // 
             gRSUPRAToolStripMenuItem.Name = "gRSUPRAToolStripMenuItem";
-            gRSUPRAToolStripMenuItem.Size = new Size(180, 22);
+            gRSUPRAToolStripMenuItem.Size = new Size(128, 22);
             gRSUPRAToolStripMenuItem.Text = "GR SUPRA";
             // 
             // gR86ToolStripMenuItem
             // 
             gR86ToolStripMenuItem.Name = "gR86ToolStripMenuItem";
-            gR86ToolStripMenuItem.Size = new Size(180, 22);
+            gR86ToolStripMenuItem.Size = new Size(128, 22);
             gR86ToolStripMenuItem.Text = "GR86";
             // 
             // gRYARISToolStripMenuItem
             // 
             gRYARISToolStripMenuItem.Name = "gRYARISToolStripMenuItem";
-            gRYARISToolStripMenuItem.Size = new Size(180, 22);
+            gRYARISToolStripMenuItem.Size = new Size(128, 22);
             gRYARISToolStripMenuItem.Text = "GR YARIS";
             // 
             // hONDAToolStripMenuItem
@@ -418,7 +419,7 @@
             aCCENTToolStripMenuItem.Name = "aCCENTToolStripMenuItem";
             aCCENTToolStripMenuItem.Size = new Size(124, 22);
             aCCENTToolStripMenuItem.Text = "ACCENT";
-            aCCENTToolStripMenuItem.Click += aCCENTToolStripMenuItem_Click;
+
             // 
             // sUVToolStripMenuItem3
             // 

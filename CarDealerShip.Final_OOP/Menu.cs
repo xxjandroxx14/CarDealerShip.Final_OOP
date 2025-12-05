@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarDealerShip.Final_OOP.Toyota.SUV;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,10 +49,10 @@ namespace CarDealerShip.Final_OOP
             VELOZ veloz = new VELOZ();
             veloz.Show();
         }
-
-        private void aCCENTToolStripMenuItem_Click(object sender, EventArgs e)
+        private void sEQUOIToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            SEQUOIA sequoia = new SEQUOIA();
+            sequoia.Show();
         }
     }
 }
