@@ -49,7 +49,7 @@
             // 
             // buttonDelete
             // 
-            buttonDelete.Location = new Point(256, 288);
+            buttonDelete.Location = new Point(225, 264);
             buttonDelete.Name = "buttonDelete";
             buttonDelete.Size = new Size(75, 23);
             buttonDelete.TabIndex = 2;
@@ -58,7 +58,7 @@
             // 
             // buttonUpdate
             // 
-            buttonUpdate.Location = new Point(388, 288);
+            buttonUpdate.Location = new Point(479, 264);
             buttonUpdate.Name = "buttonUpdate";
             buttonUpdate.Size = new Size(75, 23);
             buttonUpdate.TabIndex = 3;
