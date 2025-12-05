@@ -27,4 +27,26 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Honda\Racing\" />
+    <Folder Include="Honda\Sedan\" />
+    <Folder Include="Honda\SUV\" />
+    <Folder Include="Hyundai\Pick-Ups\" />
+    <Folder Include="Hyundai\Racing\" />
+    <Folder Include="Hyundai\Sedan\" />
+    <Folder Include="Hyundai\SUV\" />
+    <Folder Include="Mtisubishi\Pick-Ups\" />
+    <Folder Include="Mtisubishi\Racing\" />
+    <Folder Include="Mtisubishi\Sedan\" />
+    <Folder Include="Mtisubishi\SUV\" />
+    <Folder Include="Nissan\Pick-Ups\" />
+    <Folder Include="Nissan\Racing\" />
+    <Folder Include="Nissan\Sedan\" />
+    <Folder Include="Nissan\SUV\" />
+    <Folder Include="Toyota\Racing\" />
+    <Folder Include="Toyota\Pick-Ups\" />
+    <Folder Include="Toyota\SUV\" />
+    <Folder Include="Toyota\Sedan\" />
+  </ItemGroup>
+
 </Project>
