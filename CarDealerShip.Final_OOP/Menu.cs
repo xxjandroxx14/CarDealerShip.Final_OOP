@@ -42,5 +42,16 @@ namespace CarDealerShip.Final_OOP
         {
 
         }
+
+        private void vELOZToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VELOZ veloz = new VELOZ();
+            veloz.Show();
+        }
+
+        private void aCCENTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

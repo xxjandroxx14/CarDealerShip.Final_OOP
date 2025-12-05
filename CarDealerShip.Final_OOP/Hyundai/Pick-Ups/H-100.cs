@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CarDealerShip.Final_OOP
+namespace CarDealerShip.Final_OOP.Hyundai.Pick_Ups
 {
-    public partial class BR_V : Form
+    public partial class H_100 : Form
     {
-        public BR_V()
+        public H_100()
         {
             InitializeComponent();
         }
