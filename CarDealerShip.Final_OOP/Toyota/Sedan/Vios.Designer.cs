@@ -36,8 +36,6 @@
             buttonFinnace = new Button();
             label3 = new Label();
             button1 = new Button();
-            label2 = new Label();
-            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
             SuspendLayout();
@@ -83,17 +81,17 @@
             // buttonFinnace
             // 
             buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinnace.Location = new Point(390, 369);
+            buttonFinnace.Location = new Point(524, 382);
             buttonFinnace.Name = "buttonFinnace";
             buttonFinnace.Size = new Size(75, 23);
             buttonFinnace.TabIndex = 8;
-            buttonFinnace.Text = "Finnace";
+            buttonFinnace.Text = "Finance";
             buttonFinnace.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(418, 333);
+            label3.Location = new Point(552, 346);
             label3.Name = "label3";
             label3.Size = new Size(99, 15);
             label3.TabIndex = 11;
@@ -102,39 +100,18 @@
             // button1
             // 
             button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(471, 369);
+            button1.Location = new Point(605, 382);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 13;
             button1.Text = "Cash";
             button1.UseVisualStyleBackColor = true;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(632, 333);
-            label2.Name = "label2";
-            label2.Size = new Size(99, 15);
-            label2.TabIndex = 14;
-            label2.Text = "Payment Method";
-            // 
-            // button2
-            // 
-            button2.ImageAlign = ContentAlignment.BottomCenter;
-            button2.Location = new Point(632, 369);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 15;
-            button2.Text = "Cash";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // Vios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(buttonFinnace);
@@ -161,7 +138,5 @@
         private Button button1;
         private PictureBox pictureBoxViosInterior;
         private Label label3;
-        private Label label2;
-        private Button button2;
     }
 }
