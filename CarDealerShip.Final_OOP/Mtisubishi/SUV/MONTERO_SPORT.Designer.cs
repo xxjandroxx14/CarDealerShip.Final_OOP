@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             richTextBox1 = new RichTextBox();
-            button1 = new Button();
+            buttonBack = new Button();
             button2 = new Button();
             button3 = new Button();
             pictureBox1 = new PictureBox();
@@ -40,24 +40,24 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(519, 209);
+            richTextBox1.Location = new Point(462, 59);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 96);
+            richTextBox1.Size = new Size(209, 231);
             richTextBox1.TabIndex = 78;
             richTextBox1.Text = "";
             // 
-            // button1
+            // buttonBack
             // 
-            button1.Location = new Point(341, 336);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 80;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonBack.Location = new Point(356, 357);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 80;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(481, 336);
+            button2.Location = new Point(487, 357);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 81;
@@ -75,9 +75,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(113, 105);
+            pictureBox1.Location = new Point(113, 24);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(214, 210);
             pictureBox1.TabIndex = 84;
             pictureBox1.TabStop = false;
             // 
@@ -88,6 +88,7 @@
             pictureBox2.Size = new Size(100, 50);
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
+     
             // 
             // MONTERO_SPORT
             // 
@@ -98,7 +99,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonBack);
             Controls.Add(richTextBox1);
             Name = "MONTERO_SPORT";
             Text = "MONTERO_SPORT";
@@ -110,7 +111,7 @@
         #endregion
 
         private RichTextBox richTextBox1;
-        private Button button1;
+        private Button buttonBack;
         private Button button2;
         private Button button3;
         private PictureBox pictureBox1;

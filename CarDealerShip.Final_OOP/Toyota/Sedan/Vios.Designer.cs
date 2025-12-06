@@ -117,6 +117,7 @@
             buttonBack.TabIndex = 54;
             buttonBack.Text = "Back";
             buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
             // 
             // Vios
             // 
@@ -133,7 +134,7 @@
             Controls.Add(pictureBoxVios);
             Name = "Vios";
             Text = "Vios";
-            Load += Vios_Load;
+      
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).EndInit();
             ResumeLayout(false);

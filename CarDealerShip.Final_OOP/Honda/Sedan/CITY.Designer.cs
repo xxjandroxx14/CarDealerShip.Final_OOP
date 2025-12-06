@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonFinnace = new Button();
+            buttonBack = new Button();
             button1 = new Button();
             button2 = new Button();
             pictureBox1 = new PictureBox();
@@ -38,15 +38,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // buttonFinnace
+            // buttonBack
             // 
-            buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinnace.Location = new Point(290, 299);
-            buttonFinnace.Name = "buttonFinnace";
-            buttonFinnace.Size = new Size(75, 23);
-            buttonFinnace.TabIndex = 35;
-            buttonFinnace.Text = "Finance";
-            buttonFinnace.UseVisualStyleBackColor = true;
+            buttonBack.ImageAlign = ContentAlignment.BottomCenter;
+            buttonBack.Location = new Point(290, 299);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 35;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
             // 
             // button1
             // 
@@ -86,7 +87,7 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(548, 101);
+            richTextBox1.Location = new Point(457, 101);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(100, 150);
             richTextBox1.TabIndex = 42;
@@ -102,7 +103,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(buttonFinnace);
+            Controls.Add(buttonBack);
             Name = "CITY";
             Text = "CITY";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -112,7 +113,7 @@
 
         #endregion
 
-        private Button buttonFinnace;
+        private Button buttonBack;
         private Button button1;
         private Button button2;
         private PictureBox pictureBox1;

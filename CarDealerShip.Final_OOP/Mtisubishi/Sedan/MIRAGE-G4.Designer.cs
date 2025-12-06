@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             richTextBox1 = new RichTextBox();
-            button1 = new Button();
+            buttonBack = new Button();
             button2 = new Button();
             button3 = new Button();
             pictureBox1 = new PictureBox();
@@ -40,24 +40,25 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(350, 177);
+            richTextBox1.Location = new Point(515, 129);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(100, 96);
             richTextBox1.TabIndex = 78;
             richTextBox1.Text = "";
             // 
-            // button1
+            // buttonBack
             // 
-            button1.Location = new Point(264, 398);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 80;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonBack.Location = new Point(331, 356);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 80;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(434, 368);
+            button2.Location = new Point(459, 356);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 81;
@@ -66,7 +67,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(540, 356);
+            button3.Location = new Point(566, 356);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 82;
@@ -98,7 +99,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonBack);
             Controls.Add(richTextBox1);
             Name = "MIRAGE_G4";
             Text = "MIRAGE_G4";
@@ -110,7 +111,7 @@
         #endregion
 
         private RichTextBox richTextBox1;
-        private Button button1;
+        private Button buttonBack;
         private Button button2;
         private Button button3;
         private PictureBox pictureBox1;

@@ -40,7 +40,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(202, 277);
+            pictureBox1.Location = new Point(88, 240);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 50);
             pictureBox1.TabIndex = 84;
@@ -48,7 +48,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(158, 153);
+            pictureBox2.Location = new Point(78, 120);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(100, 50);
             pictureBox2.TabIndex = 85;
@@ -56,7 +56,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(308, 304);
+            button1.Location = new Point(317, 304);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 87;
@@ -65,7 +65,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(409, 287);
+            button2.Location = new Point(422, 304);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 88;
@@ -74,7 +74,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(512, 287);
+            button3.Location = new Point(537, 304);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 89;
@@ -83,7 +83,7 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(512, 120);
+            richTextBox1.Location = new Point(371, 120);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(100, 96);
             richTextBox1.TabIndex = 91;

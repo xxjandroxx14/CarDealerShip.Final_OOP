@@ -40,42 +40,43 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(350, 177);
+            richTextBox1.Location = new Point(419, 78);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 96);
+            richTextBox1.Size = new Size(267, 219);
             richTextBox1.TabIndex = 78;
             richTextBox1.Text = "";
             // 
             // button1
             // 
-            button1.Location = new Point(338, 342);
+            button1.Location = new Point(358, 351);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 80;
-            button1.Text = "button1";
+            button1.Text = "Back";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(465, 351);
+            button2.Location = new Point(485, 351);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 81;
-            button2.Text = "button2";
+            button2.Text = "Finnance";
             button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(614, 342);
+            button3.Location = new Point(586, 351);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 82;
-            button3.Text = "button3";
+            button3.Text = "Cash";
             button3.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(151, 137);
+            pictureBox1.Location = new Point(121, 125);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 50);
             pictureBox1.TabIndex = 84;
@@ -83,7 +84,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(166, 252);
+            pictureBox2.Location = new Point(102, 247);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(100, 50);
             pictureBox2.TabIndex = 85;

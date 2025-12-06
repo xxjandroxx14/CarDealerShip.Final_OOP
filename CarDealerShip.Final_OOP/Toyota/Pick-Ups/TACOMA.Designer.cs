@@ -117,6 +117,7 @@
             buttonBack.TabIndex = 66;
             buttonBack.Text = "Back";
             buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
             // 
             // TACOMA
             // 

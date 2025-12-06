@@ -36,6 +36,7 @@
             label1 = new Label();
             richTextBox1 = new RichTextBox();
             pictureBoxVios = new PictureBox();
+            buttonBack = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             SuspendLayout();
@@ -107,11 +108,23 @@
             pictureBoxVios.TabIndex = 23;
             pictureBoxVios.TabStop = false;
             // 
+            // buttonBack
+            // 
+            buttonBack.ImageAlign = ContentAlignment.BottomCenter;
+            buttonBack.Location = new Point(402, 373);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 30;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
+            // 
             // SEQUOIA
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonBack);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(buttonFinnace);
@@ -136,5 +149,6 @@
         private Label label1;
         private RichTextBox richTextBox1;
         private PictureBox pictureBoxVios;
+        private Button buttonBack;
     }
 }

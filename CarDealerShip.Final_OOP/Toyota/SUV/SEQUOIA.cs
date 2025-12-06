@@ -16,5 +16,11 @@ namespace CarDealerShip.Final_OOP.Toyota.SUV
         {
             InitializeComponent();
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            this.Close();
+        }
     }
 }

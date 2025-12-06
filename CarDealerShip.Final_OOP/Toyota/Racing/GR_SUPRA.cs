@@ -12,9 +12,21 @@ namespace CarDealerShip.Final_OOP.Toyota.Racing
 {
     public partial class GR_SUPRA : Form
     {
+        public string carpicturepath { get; set; }
         public GR_SUPRA()
         {
             InitializeComponent();
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            this.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

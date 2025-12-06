@@ -16,5 +16,7 @@ namespace CarDealerShip.Final_OOP.Mtisubishi.SUV
         {
             InitializeComponent();
         }
+
+     
     }
 }

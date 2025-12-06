@@ -19,29 +19,12 @@ namespace CarDealerShip.Final_OOP
             InitializeComponent();
         }
 
-        private void pictureVios_Click(object sender, EventArgs e)
+      
+        private void buttonBack_Click(object sender, EventArgs e)
         {
+            Menu menu = new Menu();
 
-        }
-
-        private void pictureViosInterior_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboFinnance_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBoxMonths_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Vios_Load(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

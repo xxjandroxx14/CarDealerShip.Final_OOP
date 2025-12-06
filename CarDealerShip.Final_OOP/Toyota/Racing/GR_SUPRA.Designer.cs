@@ -37,6 +37,7 @@
             richTextBox1 = new RichTextBox();
             pictureBoxVios = new PictureBox();
             buttonBack = new Button();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             SuspendLayout();
@@ -44,7 +45,7 @@
             // buttonCash
             // 
             buttonCash.ImageAlign = ContentAlignment.BottomCenter;
-            buttonCash.Location = new Point(591, 382);
+            buttonCash.Location = new Point(616, 382);
             buttonCash.Name = "buttonCash";
             buttonCash.Size = new Size(75, 23);
             buttonCash.TabIndex = 57;
@@ -63,7 +64,7 @@
             // buttonFinnace
             // 
             buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinnace.Location = new Point(510, 382);
+            buttonFinnace.Location = new Point(524, 382);
             buttonFinnace.Name = "buttonFinnace";
             buttonFinnace.Size = new Size(75, 23);
             buttonFinnace.TabIndex = 55;
@@ -111,18 +112,30 @@
             // buttonBack
             // 
             buttonBack.ImageAlign = ContentAlignment.BottomCenter;
-            buttonBack.Location = new Point(403, 382);
+            buttonBack.Location = new Point(426, 382);
             buttonBack.Name = "buttonBack";
             buttonBack.Size = new Size(75, 23);
             buttonBack.TabIndex = 58;
             buttonBack.Text = "Back";
             buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "FINANCE", "CASH" });
+            comboBox1.Location = new Point(570, 364);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 59;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // GR_SUPRA
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(comboBox1);
             Controls.Add(buttonBack);
             Controls.Add(buttonCash);
             Controls.Add(label3);
@@ -149,5 +162,6 @@
         private RichTextBox richTextBox1;
         private PictureBox pictureBoxVios;
         private Button buttonBack;
+        private ComboBox comboBox1;
     }
 }

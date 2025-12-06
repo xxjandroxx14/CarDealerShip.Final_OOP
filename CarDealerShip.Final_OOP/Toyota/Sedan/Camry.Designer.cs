@@ -86,6 +86,7 @@
             buttonBack.TabIndex = 54;
             buttonBack.Text = "Back";
             buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
             // 
             // buttonFinnance
             // 
