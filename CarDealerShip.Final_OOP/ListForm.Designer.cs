@@ -35,6 +35,7 @@
             txtPassword = new TextBox();
             label1 = new Label();
             Password = new Label();
+            buttonBack = new Button();
             ((System.ComponentModel.ISupportInitialize)datagridviewClient).BeginInit();
             SuspendLayout();
             // 
@@ -43,13 +44,12 @@
             datagridviewClient.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             datagridviewClient.Location = new Point(225, 71);
             datagridviewClient.Name = "datagridviewClient";
-            datagridviewClient.Size = new Size(329, 187);
+            datagridviewClient.Size = new Size(244, 187);
             datagridviewClient.TabIndex = 1;
-            datagridviewClient.CellContentClick += datagridviewClient_CellContentClick;
             // 
             // buttonDelete
             // 
-            buttonDelete.Location = new Point(225, 264);
+            buttonDelete.Location = new Point(291, 275);
             buttonDelete.Name = "buttonDelete";
             buttonDelete.Size = new Size(75, 23);
             buttonDelete.TabIndex = 2;
@@ -58,7 +58,7 @@
             // 
             // buttonUpdate
             // 
-            buttonUpdate.Location = new Point(479, 264);
+            buttonUpdate.Location = new Point(403, 275);
             buttonUpdate.Name = "buttonUpdate";
             buttonUpdate.Size = new Size(75, 23);
             buttonUpdate.TabIndex = 3;
@@ -72,7 +72,6 @@
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(100, 23);
             txtEmail.TabIndex = 4;
-            txtEmail.TextChanged += textBoxEmailList_TextChanged;
             // 
             // txtPassword
             // 
@@ -99,11 +98,22 @@
             Password.TabIndex = 7;
             Password.Text = "Password";
             // 
+            // buttonBack
+            // 
+            buttonBack.Location = new Point(183, 275);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 8;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
+            // 
             // ListForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(570, 391);
+            Controls.Add(buttonBack);
             Controls.Add(Password);
             Controls.Add(label1);
             Controls.Add(txtPassword);
@@ -126,5 +136,7 @@
         private TextBox txtPassword;
         private Label label1;
         private Label Password;
+        private Button button1;
+        private Button buttonBack;
     }
 }

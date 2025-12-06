@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using SQLite;
+using System.Linq; // Added for FirstOrDefault
 
 namespace CarDealerShip.Final_OOP
 {
@@ -26,20 +27,20 @@ namespace CarDealerShip.Final_OOP
                 return false;
             }
 
-            var UserModel = new UserModel
+            var newUserModel = new UserModel
             {
                 Password = password,
                 Email = email
             };
 
-            _connection.Insert(UserModel);
+            _connection.Insert(newUserModel);
             return true;
         }
 
         public bool Authenticate(string email, string password)
         {
             var user = _connection.Table<UserModel>()
-                                  .FirstOrDefault(u => u.Email == email && u.Password == password);
+                                     .FirstOrDefault(u => u.Email == email && u.Password == password);
 
             return user != null;
         }
@@ -49,5 +50,64 @@ namespace CarDealerShip.Final_OOP
             return _connection.Table<UserModel>().ToList();
         }
 
+       
+        public bool Update(string oldEmail, string newEmail, string newPassword)
+        {
+            var userToUpdate = _connection.Table<UserModel>().FirstOrDefault(u => u.Email == oldEmail);
+
+            if (userToUpdate == null) return false;
+
+            try
+            {
+              
+                if (oldEmail.Equals(newEmail, StringComparison.OrdinalIgnoreCase))
+                {
+                   
+                    userToUpdate.Password = newPassword;
+                    int rowsAffected = _connection.Update(userToUpdate);
+                    return rowsAffected > 0;
+                }
+                else
+                {
+                  
+                    _connection.Delete(userToUpdate);
+
+                
+                    var newUserModel = new UserModel
+                    {
+                        Email = newEmail,
+                        Password = newPassword
+                    };
+
+                    int rowsAffected = _connection.Insert(newUserModel);
+                    return rowsAffected > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+  
+                Console.WriteLine($"Error updating user: {ex.Message}");
+                return false;
+            }
+        }
+
+     
+        public bool Delete(string email)
+        {
+            var userToDelete = _connection.Table<UserModel>().FirstOrDefault(u => u.Email == email);
+
+            if (userToDelete == null) return false;
+
+            try
+            {
+                int rowsAffected = _connection.Delete(userToDelete);
+                return rowsAffected > 0;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error deleting user: {ex.Message}");
+                return false;
+            }
+        }
     }
 }

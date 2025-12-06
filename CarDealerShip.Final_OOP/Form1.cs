@@ -1,14 +1,15 @@
-﻿
-using Microsoft.VisualBasic.ApplicationServices;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Windows.Forms;
-using System.Collections.Generic; // Required for List<UserModel>
+using System.Collections.Generic;
 using System;
 
 namespace CarDealerShip.Final_OOP
 {
     public partial class Form1 : Form
     {
+
+        private List<UserModel> _users = new List<UserModel>();
+
         public Form1()
         {
             InitializeComponent();
@@ -18,8 +19,9 @@ namespace CarDealerShip.Final_OOP
         {
             string email = textBoxEmail.Text;
             string password = textBoxPassword.Text;
+
             bool isInvalidInput = string.IsNullOrWhiteSpace(email)
-                                   || string.IsNullOrWhiteSpace(password);
+                                 || string.IsNullOrWhiteSpace(password);
 
             if (isInvalidInput)
             {
@@ -35,14 +37,15 @@ namespace CarDealerShip.Final_OOP
 
                 if (userAdded)
                 {
-                    MessageBox.Show("User created successfully. Click the 'View Users' button to see the list.",
+                    this._users = repository.GetAllUsers();
+
+                    MessageBox.Show("User created successfully.",
                         "Success", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
 
                     Menu menu = new Menu();
                     menu.Show();
-                    this.Hide(); // Change is here: Hides Form1 instead of closing it
-
+                    this.Hide();
                 }
                 else
                 {
@@ -50,7 +53,6 @@ namespace CarDealerShip.Final_OOP
                         "Error", MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
-
             }
         }
 
@@ -60,7 +62,7 @@ namespace CarDealerShip.Final_OOP
             string password = textBoxPassword.Text;
 
             bool isInvalidInput = string.IsNullOrWhiteSpace(email)
-                                   || string.IsNullOrWhiteSpace(password);
+                                 || string.IsNullOrWhiteSpace(password);
 
             if (isInvalidInput)
             {
@@ -83,7 +85,6 @@ namespace CarDealerShip.Final_OOP
                 Menu menu = new Menu();
                 menu.Show();
                 this.Hide();
-
             }
             else
             {
@@ -94,20 +95,35 @@ namespace CarDealerShip.Final_OOP
             }
         }
 
-
+        // In Form1.cs
 
         private void buttonAdminList_Click(object sender, EventArgs e)
         {
             UserRepository repository = new UserRepository();
-            List<UserModel> allUsers = repository.GetAllUsers();
 
-            ListForm listForm = new ListForm();
-            listForm.LoadUserData(allUsers);
+            // 1. Fetch the latest list (which now reflects database deletions/updates)
+            this._users = repository.GetAllUsers();
+
+            ListForm listForm = new ListForm(this);
+
+            // 2. Load the FRESH list into the new ListForm
+            listForm.LoadUserData(this._users);
 
             listForm.Show();
             this.Hide();
         }
+        public void UpdateUserList(List<UserModel> updatedUsers)
+        {
+            this._users = updatedUsers;
+
+            /* * IMPORTANT: If Form1 contains a DataGridView named 'dataGridViewUsers' 
+             * that displays the user list, uncomment the following block to refresh it.
+            */
+            // if (dataGridViewUsers != null)
+            // {
+            //     dataGridViewUsers.DataSource = null;
+            //     dataGridViewUsers.DataSource = this._users;
+            // }
+        }
     }
 }
-
-
