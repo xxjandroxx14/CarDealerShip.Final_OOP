@@ -29,26 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TACOMA));
-            button1 = new Button();
+            buttonCash = new Button();
             label3 = new Label();
             buttonFinnace = new Button();
             pictureBoxViosInterior = new PictureBox();
             label1 = new Label();
             richTextBox1 = new RichTextBox();
             pictureBoxVios = new PictureBox();
+            buttonBack = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // buttonCash
             // 
-            button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(591, 382);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 43;
-            button1.Text = "Cash";
-            button1.UseVisualStyleBackColor = true;
+            buttonCash.ImageAlign = ContentAlignment.BottomCenter;
+            buttonCash.Location = new Point(591, 382);
+            buttonCash.Name = "buttonCash";
+            buttonCash.Size = new Size(75, 23);
+            buttonCash.TabIndex = 43;
+            buttonCash.Text = "Cash";
+            buttonCash.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -72,7 +73,7 @@
             // pictureBoxViosInterior
             // 
             pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
-            pictureBoxViosInterior.Location = new Point(4, 237);
+            pictureBoxViosInterior.Location = new Point(4, 236);
             pictureBoxViosInterior.Name = "pictureBoxViosInterior";
             pictureBoxViosInterior.Size = new Size(372, 201);
             pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -100,19 +101,30 @@
             // pictureBoxVios
             // 
             pictureBoxVios.Image = (Image)resources.GetObject("pictureBoxVios.Image");
-            pictureBoxVios.Location = new Point(4, 13);
+            pictureBoxVios.Location = new Point(4, 12);
             pictureBoxVios.Name = "pictureBoxVios";
             pictureBoxVios.Size = new Size(372, 218);
             pictureBoxVios.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxVios.TabIndex = 37;
             pictureBoxVios.TabStop = false;
             // 
+            // buttonBack
+            // 
+            buttonBack.ImageAlign = ContentAlignment.BottomCenter;
+            buttonBack.Location = new Point(418, 382);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 66;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
+            // 
             // TACOMA
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(buttonBack);
+            Controls.Add(buttonCash);
             Controls.Add(label3);
             Controls.Add(buttonFinnace);
             Controls.Add(pictureBoxViosInterior);
@@ -129,12 +141,13 @@
 
         #endregion
 
-        private Button button1;
+        private Button buttonCash;
         private Label label3;
         private Button buttonFinnace;
         private PictureBox pictureBoxViosInterior;
         private Label label1;
         private RichTextBox richTextBox1;
         private PictureBox pictureBoxVios;
+        private Button buttonBack;
     }
 }

@@ -29,26 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GR86));
-            button1 = new Button();
+            buttonCash = new Button();
             label3 = new Label();
             buttonFinnace = new Button();
             pictureBoxViosInterior = new PictureBox();
             label1 = new Label();
             richTextBox1 = new RichTextBox();
             pictureBoxVios = new PictureBox();
+            buttonBack = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // buttonCash
             // 
-            button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(591, 382);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 71;
-            button1.Text = "Cash";
-            button1.UseVisualStyleBackColor = true;
+            buttonCash.ImageAlign = ContentAlignment.BottomCenter;
+            buttonCash.Location = new Point(591, 382);
+            buttonCash.Name = "buttonCash";
+            buttonCash.Size = new Size(75, 23);
+            buttonCash.TabIndex = 71;
+            buttonCash.Text = "Cash";
+            buttonCash.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -107,12 +108,23 @@
             pictureBoxVios.TabIndex = 65;
             pictureBoxVios.TabStop = false;
             // 
+            // buttonBack
+            // 
+            buttonBack.ImageAlign = ContentAlignment.BottomCenter;
+            buttonBack.Location = new Point(410, 382);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 72;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
+            // 
             // GR86
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(buttonBack);
+            Controls.Add(buttonCash);
             Controls.Add(label3);
             Controls.Add(buttonFinnace);
             Controls.Add(pictureBoxViosInterior);
@@ -129,12 +141,13 @@
 
         #endregion
 
-        private Button button1;
+        private Button buttonCash;
         private Label label3;
         private Button buttonFinnace;
         private PictureBox pictureBoxViosInterior;
         private Label label1;
         private RichTextBox richTextBox1;
         private PictureBox pictureBoxVios;
+        private Button buttonBack;
     }
 }

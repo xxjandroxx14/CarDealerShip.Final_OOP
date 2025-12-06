@@ -35,7 +35,8 @@
             pictureBoxViosInterior = new PictureBox();
             buttonFinnace = new Button();
             label3 = new Label();
-            button1 = new Button();
+            buttonCash = new Button();
+            buttonBack = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
             SuspendLayout();
@@ -97,22 +98,33 @@
             label3.TabIndex = 11;
             label3.Text = "Payment Method";
             // 
-            // button1
+            // buttonCash
             // 
-            button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(605, 382);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 13;
-            button1.Text = "Cash";
-            button1.UseVisualStyleBackColor = true;
+            buttonCash.ImageAlign = ContentAlignment.BottomCenter;
+            buttonCash.Location = new Point(619, 382);
+            buttonCash.Name = "buttonCash";
+            buttonCash.Size = new Size(75, 23);
+            buttonCash.TabIndex = 13;
+            buttonCash.Text = "Cash";
+            buttonCash.UseVisualStyleBackColor = true;
+            // 
+            // buttonBack
+            // 
+            buttonBack.ImageAlign = ContentAlignment.BottomCenter;
+            buttonBack.Location = new Point(424, 382);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 54;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
             // 
             // Vios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(buttonBack);
+            Controls.Add(buttonCash);
             Controls.Add(label3);
             Controls.Add(buttonFinnace);
             Controls.Add(pictureBoxViosInterior);
@@ -135,8 +147,9 @@
         private RichTextBox richTextBox1;
         private Label label1;
         private Button buttonFinnace;
-        private Button button1;
+        private Button buttonCash;
         private PictureBox pictureBoxViosInterior;
         private Label label3;
+        private Button buttonBack;
     }
 }

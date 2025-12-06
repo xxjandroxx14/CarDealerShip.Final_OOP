@@ -32,6 +32,9 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             richTextBox1 = new RichTextBox();
+            buttonBack = new Button();
+            buttonFinnace = new Button();
+            buttonCash = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -64,11 +67,44 @@
             richTextBox1.TabIndex = 2;
             richTextBox1.Text = "";
             // 
+            // buttonBack
+            // 
+            buttonBack.ImageAlign = ContentAlignment.BottomCenter;
+            buttonBack.Location = new Point(395, 353);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 54;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
+            // 
+            // buttonFinnace
+            // 
+            buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
+            buttonFinnace.Location = new Point(497, 353);
+            buttonFinnace.Name = "buttonFinnace";
+            buttonFinnace.Size = new Size(75, 23);
+            buttonFinnace.TabIndex = 55;
+            buttonFinnace.Text = "Finance";
+            buttonFinnace.UseVisualStyleBackColor = true;
+            // 
+            // buttonCash
+            // 
+            buttonCash.ImageAlign = ContentAlignment.BottomCenter;
+            buttonCash.Location = new Point(606, 353);
+            buttonCash.Name = "buttonCash";
+            buttonCash.Size = new Size(75, 23);
+            buttonCash.TabIndex = 56;
+            buttonCash.Text = "Cash";
+            buttonCash.UseVisualStyleBackColor = true;
+            // 
             // CorrolaAxio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonCash);
+            Controls.Add(buttonFinnace);
+            Controls.Add(buttonBack);
             Controls.Add(richTextBox1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -84,5 +120,8 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private RichTextBox richTextBox1;
+        private Button buttonBack;
+        private Button buttonFinnace;
+        private Button buttonCash;
     }
 }

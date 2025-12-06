@@ -36,6 +36,7 @@
             label1 = new Label();
             richTextBox1 = new RichTextBox();
             pictureBoxVios = new PictureBox();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             SuspendLayout();
@@ -107,11 +108,22 @@
             pictureBoxVios.TabIndex = 44;
             pictureBoxVios.TabStop = false;
             // 
+            // button4
+            // 
+            button4.ImageAlign = ContentAlignment.BottomCenter;
+            button4.Location = new Point(405, 382);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 59;
+            button4.Text = "Back";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // HILUX
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(buttonFinnace);
@@ -136,5 +148,6 @@
         private Label label1;
         private RichTextBox richTextBox1;
         private PictureBox pictureBoxVios;
+        private Button button4;
     }
 }
