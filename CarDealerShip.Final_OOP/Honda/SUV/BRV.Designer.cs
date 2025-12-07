@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BRV));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            buttonBack = new Button();
+            buttonfn = new Button();
+            buttonCash = new Button();
             richTextBox1 = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -40,54 +41,58 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(96, 99);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1, -2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(365, 231);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 48;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(106, 178);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(1, 235);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
+            pictureBox2.Size = new Size(349, 213);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 49;
             pictureBox2.TabStop = false;
             // 
-            // button1
+            // buttonBack
             // 
-            button1.Location = new Point(368, 272);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 50;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonBack.Location = new Point(392, 324);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 50;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonfn
             // 
-            button2.Location = new Point(464, 272);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 51;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            buttonfn.Location = new Point(523, 324);
+            buttonfn.Name = "buttonfn";
+            buttonfn.Size = new Size(75, 23);
+            buttonfn.TabIndex = 51;
+            buttonfn.Text = "Finnance";
+            buttonfn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonCash
             // 
-            button3.Location = new Point(532, 272);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 52;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            buttonCash.Location = new Point(649, 324);
+            buttonCash.Name = "buttonCash";
+            buttonCash.Size = new Size(75, 23);
+            buttonCash.TabIndex = 52;
+            buttonCash.Text = "Cash";
+            buttonCash.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(430, 103);
+            richTextBox1.Location = new Point(392, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 96);
+            richTextBox1.Size = new Size(396, 292);
             richTextBox1.TabIndex = 53;
-            richTextBox1.Text = "";
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // BRV
             // 
@@ -95,9 +100,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(richTextBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonCash);
+            Controls.Add(buttonfn);
+            Controls.Add(buttonBack);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "BRV";
@@ -111,9 +116,9 @@
 
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button buttonBack;
+        private Button buttonfn;
+        private Button buttonCash;
         private RichTextBox richTextBox1;
     }
 }

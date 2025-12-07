@@ -134,7 +134,6 @@
             Controls.Add(pictureBoxVios);
             Name = "Vios";
             Text = "Vios";
-      
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).EndInit();
             ResumeLayout(false);

@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NSX));
+            buttonBack = new Button();
+            ButtonFiannance = new Button();
+            buttonCash = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             richTextBox1 = new RichTextBox();
@@ -38,56 +39,60 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // buttonBack
             // 
-            button1.Location = new Point(321, 285);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 44;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonBack.Location = new Point(427, 340);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 44;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // ButtonFiannance
             // 
-            button2.Location = new Point(434, 285);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 45;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            ButtonFiannance.Location = new Point(553, 340);
+            ButtonFiannance.Name = "ButtonFiannance";
+            ButtonFiannance.Size = new Size(75, 23);
+            ButtonFiannance.TabIndex = 45;
+            ButtonFiannance.Text = "Finnance";
+            ButtonFiannance.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonCash
             // 
-            button3.Location = new Point(525, 285);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 46;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            buttonCash.Location = new Point(670, 354);
+            buttonCash.Name = "buttonCash";
+            buttonCash.Size = new Size(75, 23);
+            buttonCash.TabIndex = 46;
+            buttonCash.Text = "Cash";
+            buttonCash.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(101, 126);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(352, 216);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 47;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(128, 217);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(12, 248);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
+            pictureBox2.Size = new Size(352, 190);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 48;
             pictureBox2.TabStop = false;
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(413, 105);
+            richTextBox1.Location = new Point(398, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(239, 137);
+            richTextBox1.Size = new Size(390, 260);
             richTextBox1.TabIndex = 49;
-            richTextBox1.Text = "";
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // NSX
             // 
@@ -97,11 +102,12 @@
             Controls.Add(richTextBox1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonCash);
+            Controls.Add(ButtonFiannance);
+            Controls.Add(buttonBack);
             Name = "NSX";
             Text = "NSX";
+            Load += NSX_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -109,9 +115,9 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button buttonBack;
+        private Button ButtonFiannance;
+        private Button buttonCash;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private RichTextBox richTextBox1;

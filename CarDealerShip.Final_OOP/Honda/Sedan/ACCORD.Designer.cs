@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ACCORD));
             buttonBack = new Button();
             buttonCash = new Button();
             buttonFinance = new Button();
@@ -41,7 +42,7 @@
             // buttonBack
             // 
             buttonBack.ImageAlign = ContentAlignment.BottomCenter;
-            buttonBack.Location = new Point(356, 344);
+            buttonBack.Location = new Point(433, 344);
             buttonBack.Name = "buttonBack";
             buttonBack.Size = new Size(75, 23);
             buttonBack.TabIndex = 35;
@@ -51,7 +52,7 @@
             // buttonCash
             // 
             buttonCash.ImageAlign = ContentAlignment.BottomCenter;
-            buttonCash.Location = new Point(594, 344);
+            buttonCash.Location = new Point(677, 344);
             buttonCash.Name = "buttonCash";
             buttonCash.Size = new Size(75, 23);
             buttonCash.TabIndex = 36;
@@ -61,7 +62,7 @@
             // buttonFinance
             // 
             buttonFinance.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinance.Location = new Point(486, 344);
+            buttonFinance.Location = new Point(555, 344);
             buttonFinance.Name = "buttonFinance";
             buttonFinance.Size = new Size(75, 23);
             buttonFinance.TabIndex = 37;
@@ -70,25 +71,29 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(489, 36);
+            richTextBox1.Location = new Point(433, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(254, 266);
+            richTextBox1.Size = new Size(355, 294);
             richTextBox1.TabIndex = 38;
-            richTextBox1.Text = "";
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(118, 87);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(392, 226);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 39;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(118, 191);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(3, 234);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
+            pictureBox2.Size = new Size(392, 215);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 40;
             pictureBox2.TabStop = false;
             // 

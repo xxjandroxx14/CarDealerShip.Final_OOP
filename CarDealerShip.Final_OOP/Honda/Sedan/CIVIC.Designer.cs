@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonFinnace = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CIVIC));
+            buttonBack = new Button();
             button1 = new Button();
-            button2 = new Button();
+            buttonCash = new Button();
             richTextBox1 = new RichTextBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -38,57 +39,62 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // buttonFinnace
+            // buttonBack
             // 
-            buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinnace.Location = new Point(354, 294);
-            buttonFinnace.Name = "buttonFinnace";
-            buttonFinnace.Size = new Size(75, 23);
-            buttonFinnace.TabIndex = 35;
-            buttonFinnace.Text = "Finance";
-            buttonFinnace.UseVisualStyleBackColor = true;
+            buttonBack.ImageAlign = ContentAlignment.BottomCenter;
+            buttonBack.Location = new Point(427, 345);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 35;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
             button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(458, 303);
+            button1.Location = new Point(557, 345);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 36;
             button1.Text = "Finance";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // button2
+            // buttonCash
             // 
-            button2.ImageAlign = ContentAlignment.BottomCenter;
-            button2.Location = new Point(584, 303);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 37;
-            button2.Text = "Finance";
-            button2.UseVisualStyleBackColor = true;
+            buttonCash.ImageAlign = ContentAlignment.BottomCenter;
+            buttonCash.Location = new Point(655, 345);
+            buttonCash.Name = "buttonCash";
+            buttonCash.Size = new Size(75, 23);
+            buttonCash.TabIndex = 37;
+            buttonCash.Text = "Cash";
+            buttonCash.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(516, 125);
+            richTextBox1.Location = new Point(380, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 96);
+            richTextBox1.Size = new Size(408, 255);
             richTextBox1.TabIndex = 38;
-            richTextBox1.Text = "";
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(136, 108);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(-3, 245);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(364, 208);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 39;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(136, 210);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-3, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
+            pictureBox2.Size = new Size(364, 239);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 40;
             pictureBox2.TabStop = false;
             // 
@@ -100,9 +106,9 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(richTextBox1);
-            Controls.Add(button2);
+            Controls.Add(buttonCash);
             Controls.Add(button1);
-            Controls.Add(buttonFinnace);
+            Controls.Add(buttonBack);
             Name = "CIVIC";
             Text = "CIVIC";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -112,9 +118,9 @@
 
         #endregion
 
-        private Button buttonFinnace;
+        private Button buttonBack;
         private Button button1;
-        private Button button2;
+        private Button buttonCash;
         private RichTextBox richTextBox1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;

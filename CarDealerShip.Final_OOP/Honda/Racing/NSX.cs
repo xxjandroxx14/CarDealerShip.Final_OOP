@@ -16,5 +16,10 @@ namespace CarDealerShip.Final_OOP.Honda.Racing
         {
             InitializeComponent();
         }
+
+        private void NSX_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

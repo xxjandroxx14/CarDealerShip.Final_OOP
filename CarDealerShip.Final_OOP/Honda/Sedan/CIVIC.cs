@@ -16,5 +16,10 @@ namespace CarDealerShip.Final_OOP.Honda.Sedan
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
