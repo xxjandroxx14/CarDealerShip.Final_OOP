@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MIRAGE_G4));
             richTextBox1 = new RichTextBox();
             buttonBack = new Button();
             button2 = new Button();
@@ -40,15 +41,15 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(515, 129);
+            richTextBox1.Location = new Point(413, 28);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 96);
+            richTextBox1.Size = new Size(351, 223);
             richTextBox1.TabIndex = 78;
             richTextBox1.Text = "";
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(331, 356);
+            buttonBack.Location = new Point(369, 356);
             buttonBack.Name = "buttonBack";
             buttonBack.Size = new Size(75, 23);
             buttonBack.TabIndex = 80;
@@ -58,7 +59,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(459, 356);
+            button2.Location = new Point(510, 356);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 81;
@@ -67,7 +68,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(566, 356);
+            button3.Location = new Point(628, 356);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 82;
@@ -76,17 +77,21 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(92, 241);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 238);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(363, 200);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 84;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(136, 110);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
+            pictureBox2.Size = new Size(352, 230);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
             // 

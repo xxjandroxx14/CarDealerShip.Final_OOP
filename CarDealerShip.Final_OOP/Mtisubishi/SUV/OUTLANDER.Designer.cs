@@ -45,7 +45,7 @@
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(391, 299);
             richTextBox1.TabIndex = 78;
-            richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            richTextBox1.Text = "";
             // 
             // button1
             // 

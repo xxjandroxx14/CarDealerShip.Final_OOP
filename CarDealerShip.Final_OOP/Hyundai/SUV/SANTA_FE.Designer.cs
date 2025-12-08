@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SANTA_FE));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             button1 = new Button();
@@ -40,23 +41,27 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(93, 120);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(-4, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(353, 239);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 71;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(140, 282);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-4, 245);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
+            pictureBox2.Size = new Size(334, 204);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 72;
             pictureBox2.TabStop = false;
             // 
             // button1
             // 
-            button1.Location = new Point(304, 309);
+            button1.Location = new Point(376, 319);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 74;
@@ -65,7 +70,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(398, 272);
+            button2.Location = new Point(506, 319);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 75;
@@ -74,7 +79,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(542, 309);
+            button3.Location = new Point(626, 309);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 76;
@@ -83,9 +88,9 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(473, 120);
+            richTextBox1.Location = new Point(434, 48);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 96);
+            richTextBox1.Size = new Size(279, 191);
             richTextBox1.TabIndex = 78;
             richTextBox1.Text = "";
             // 

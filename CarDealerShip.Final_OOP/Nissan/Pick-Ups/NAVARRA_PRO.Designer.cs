@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NAVARRA_PRO));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             button1 = new Button();
@@ -40,17 +41,21 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(88, 240);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 239);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(286, 179);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 84;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(78, 120);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(12, 1);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
+            pictureBox2.Size = new Size(276, 215);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
             // 
@@ -83,9 +88,9 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(371, 120);
+            richTextBox1.Location = new Point(374, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 96);
+            richTextBox1.Size = new Size(377, 258);
             richTextBox1.TabIndex = 91;
             richTextBox1.Text = "";
             // 

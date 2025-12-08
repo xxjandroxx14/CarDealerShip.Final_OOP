@@ -16,5 +16,10 @@ namespace CarDealerShip.Final_OOP.Nissan.Racing
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

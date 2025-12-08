@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(X_FORCE));
             richTextBox1 = new RichTextBox();
             button1 = new Button();
             button2 = new Button();
@@ -40,9 +41,9 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(350, 177);
+            richTextBox1.Location = new Point(397, 26);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 96);
+            richTextBox1.Size = new Size(370, 247);
             richTextBox1.TabIndex = 78;
             richTextBox1.Text = "";
             // 
@@ -75,17 +76,22 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(115, 113);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(-1, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(299, 198);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 84;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(85, 223);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-1, 206);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
+            pictureBox2.Size = new Size(323, 232);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
             // 

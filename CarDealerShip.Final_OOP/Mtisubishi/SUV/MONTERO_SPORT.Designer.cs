@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MONTERO_SPORT));
             richTextBox1 = new RichTextBox();
             buttonBack = new Button();
             button2 = new Button();
@@ -40,9 +41,9 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(462, 59);
+            richTextBox1.Location = new Point(438, 26);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(209, 231);
+            richTextBox1.Size = new Size(292, 231);
             richTextBox1.TabIndex = 78;
             richTextBox1.Text = "";
             // 
@@ -75,20 +76,23 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(113, 24);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(214, 210);
+            pictureBox1.Size = new Size(346, 221);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 84;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(152, 240);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(1, 240);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
+            pictureBox2.Size = new Size(346, 198);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
-     
             // 
             // MONTERO_SPORT
             // 

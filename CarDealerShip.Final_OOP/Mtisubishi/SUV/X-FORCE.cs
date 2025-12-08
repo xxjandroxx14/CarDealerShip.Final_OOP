@@ -16,5 +16,10 @@ namespace CarDealerShip.Final_OOP.Mtisubishi.SUV
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
