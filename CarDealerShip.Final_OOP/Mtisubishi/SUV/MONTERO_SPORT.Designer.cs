@@ -29,96 +29,126 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MONTERO_SPORT));
+            button4 = new Button();
+            button1 = new Button();
+            label3 = new Label();
+            buttonFinnace = new Button();
+            pictureBoxViosInterior = new PictureBox();
+            label1 = new Label();
             richTextBox1 = new RichTextBox();
-            buttonBack = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pictureBoxVios = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             SuspendLayout();
+            // 
+            // button4
+            // 
+            button4.ImageAlign = ContentAlignment.BottomCenter;
+            button4.Location = new Point(709, 396);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 147;
+            button4.Text = "Back";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.ImageAlign = ContentAlignment.BottomCenter;
+            button1.Location = new Point(378, 396);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 146;
+            button1.Text = "Cash";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(378, 340);
+            label3.Name = "label3";
+            label3.Size = new Size(99, 15);
+            label3.TabIndex = 145;
+            label3.Text = "Payment Method";
+            // 
+            // buttonFinnace
+            // 
+            buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
+            buttonFinnace.Location = new Point(378, 367);
+            buttonFinnace.Name = "buttonFinnace";
+            buttonFinnace.Size = new Size(75, 23);
+            buttonFinnace.TabIndex = 144;
+            buttonFinnace.Text = "Finance";
+            buttonFinnace.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxViosInterior
+            // 
+            pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
+            pictureBoxViosInterior.Location = new Point(8, 237);
+            pictureBoxViosInterior.Name = "pictureBoxViosInterior";
+            pictureBoxViosInterior.Size = new Size(331, 201);
+            pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxViosInterior.TabIndex = 143;
+            pictureBoxViosInterior.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(197, 310);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 15);
+            label1.TabIndex = 142;
+            label1.Text = "Price: 900000";
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(438, 26);
+            richTextBox1.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richTextBox1.Location = new Point(378, 13);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(292, 231);
-            richTextBox1.TabIndex = 78;
-            richTextBox1.Text = "";
+            richTextBox1.Size = new Size(414, 300);
+            richTextBox1.TabIndex = 141;
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
-            // buttonBack
+            // pictureBoxVios
             // 
-            buttonBack.Location = new Point(356, 357);
-            buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(75, 23);
-            buttonBack.TabIndex = 80;
-            buttonBack.Text = "Back";
-            buttonBack.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(487, 357);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 81;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(596, 346);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 82;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(346, 221);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 84;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1, 240);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(346, 198);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 85;
-            pictureBox2.TabStop = false;
+            pictureBoxVios.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxVios.Image = (Image)resources.GetObject("pictureBoxVios.Image");
+            pictureBoxVios.Location = new Point(8, 13);
+            pictureBoxVios.Name = "pictureBoxVios";
+            pictureBoxVios.Size = new Size(331, 213);
+            pictureBoxVios.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxVios.TabIndex = 140;
+            pictureBoxVios.TabStop = false;
             // 
             // MONTERO_SPORT
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(buttonBack);
+            Controls.Add(button4);
+            Controls.Add(button1);
+            Controls.Add(label3);
+            Controls.Add(buttonFinnace);
+            Controls.Add(pictureBoxViosInterior);
+            Controls.Add(label1);
             Controls.Add(richTextBox1);
+            Controls.Add(pictureBoxVios);
             Name = "MONTERO_SPORT";
             Text = "MONTERO_SPORT";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxVios).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
+        private Button button4;
+        private Button button1;
+        private Label label3;
+        private Button buttonFinnace;
+        private PictureBox pictureBoxViosInterior;
+        private Label label1;
         private RichTextBox richTextBox1;
-        private Button buttonBack;
-        private Button button2;
-        private Button button3;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private PictureBox pictureBoxVios;
     }
 }

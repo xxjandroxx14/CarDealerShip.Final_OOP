@@ -21,5 +21,10 @@ namespace CarDealerShip.Final_OOP.Mtisubishi.SUV
         {
 
         }
+
+        private void X_FORCE_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

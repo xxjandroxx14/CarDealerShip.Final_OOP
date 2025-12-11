@@ -44,7 +44,7 @@
             // button1
             // 
             button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(591, 382);
+            button1.Location = new Point(382, 396);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 50;
@@ -54,7 +54,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(538, 346);
+            label3.Location = new Point(382, 340);
             label3.Name = "label3";
             label3.Size = new Size(99, 15);
             label3.TabIndex = 49;
@@ -63,7 +63,7 @@
             // buttonFinnace
             // 
             buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinnace.Location = new Point(510, 382);
+            buttonFinnace.Location = new Point(382, 367);
             buttonFinnace.Name = "buttonFinnace";
             buttonFinnace.Size = new Size(75, 23);
             buttonFinnace.TabIndex = 48;
@@ -73,9 +73,9 @@
             // pictureBoxViosInterior
             // 
             pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
-            pictureBoxViosInterior.Location = new Point(27, 250);
+            pictureBoxViosInterior.Location = new Point(12, 237);
             pictureBoxViosInterior.Name = "pictureBoxViosInterior";
-            pictureBoxViosInterior.Size = new Size(282, 201);
+            pictureBoxViosInterior.Size = new Size(331, 201);
             pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxViosInterior.TabIndex = 47;
             pictureBoxViosInterior.TabStop = false;
@@ -101,9 +101,9 @@
             // pictureBoxVios
             // 
             pictureBoxVios.Image = (Image)resources.GetObject("pictureBoxVios.Image");
-            pictureBoxVios.Location = new Point(-5, 12);
+            pictureBoxVios.Location = new Point(12, 13);
             pictureBoxVios.Name = "pictureBoxVios";
-            pictureBoxVios.Size = new Size(341, 246);
+            pictureBoxVios.Size = new Size(331, 213);
             pictureBoxVios.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxVios.TabIndex = 44;
             pictureBoxVios.TabStop = false;
@@ -111,7 +111,7 @@
             // button4
             // 
             button4.ImageAlign = ContentAlignment.BottomCenter;
-            button4.Location = new Point(405, 382);
+            button4.Location = new Point(713, 396);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 59;

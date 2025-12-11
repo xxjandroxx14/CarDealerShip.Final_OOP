@@ -29,98 +29,126 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ACCENT));
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
+            button4 = new Button();
             button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            label3 = new Label();
+            buttonFinnace = new Button();
+            pictureBoxViosInterior = new PictureBox();
+            label1 = new Label();
             richTextBox1 = new RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pictureBoxVios = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // button4
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(348, 234);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 63;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 242);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(331, 210);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 64;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
+            button4.ImageAlign = ContentAlignment.BottomCenter;
+            button4.Location = new Point(709, 396);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 91;
+            button4.Text = "Back";
+            button4.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(437, 308);
+            button1.ImageAlign = ContentAlignment.BottomCenter;
+            button1.Location = new Point(378, 396);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
-            button1.TabIndex = 65;
-            button1.Text = "button1";
+            button1.TabIndex = 90;
+            button1.Text = "Cash";
             button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // label3
             // 
-            button2.Location = new Point(532, 308);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 66;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            label3.AutoSize = true;
+            label3.Location = new Point(378, 340);
+            label3.Name = "label3";
+            label3.Size = new Size(99, 15);
+            label3.TabIndex = 89;
+            label3.Text = "Payment Method";
             // 
-            // button3
+            // buttonFinnace
             // 
-            button3.Location = new Point(644, 308);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 67;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
+            buttonFinnace.Location = new Point(378, 367);
+            buttonFinnace.Name = "buttonFinnace";
+            buttonFinnace.Size = new Size(75, 23);
+            buttonFinnace.TabIndex = 88;
+            buttonFinnace.Text = "Finance";
+            buttonFinnace.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxViosInterior
+            // 
+            pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
+            pictureBoxViosInterior.Location = new Point(8, 237);
+            pictureBoxViosInterior.Name = "pictureBoxViosInterior";
+            pictureBoxViosInterior.Size = new Size(331, 201);
+            pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxViosInterior.TabIndex = 87;
+            pictureBoxViosInterior.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(197, 310);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 15);
+            label1.TabIndex = 86;
+            label1.Text = "Price: 900000";
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(437, 12);
+            richTextBox1.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richTextBox1.Location = new Point(378, 13);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(300, 233);
-            richTextBox1.TabIndex = 68;
-            richTextBox1.Text = "";
+            richTextBox1.Size = new Size(414, 300);
+            richTextBox1.TabIndex = 85;
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
+            // pictureBoxVios
+            // 
+            pictureBoxVios.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBoxVios.Image = (Image)resources.GetObject("pictureBoxVios.Image");
+            pictureBoxVios.Location = new Point(8, 13);
+            pictureBoxVios.Name = "pictureBoxVios";
+            pictureBoxVios.Size = new Size(331, 213);
+            pictureBoxVios.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxVios.TabIndex = 84;
+            pictureBoxVios.TabStop = false;
             // 
             // ACCENT
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(richTextBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(button4);
             Controls.Add(button1);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(label3);
+            Controls.Add(buttonFinnace);
+            Controls.Add(pictureBoxViosInterior);
+            Controls.Add(label1);
+            Controls.Add(richTextBox1);
+            Controls.Add(pictureBoxVios);
             Name = "ACCENT";
             Text = "ACCENT";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxVios).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private Button button4;
         private Button button1;
-        private Button button2;
-        private Button button3;
+        private Label label3;
+        private Button buttonFinnace;
+        private PictureBox pictureBoxViosInterior;
+        private Label label1;
         private RichTextBox richTextBox1;
+        private PictureBox pictureBoxVios;
     }
 }

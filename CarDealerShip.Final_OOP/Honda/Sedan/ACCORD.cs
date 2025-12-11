@@ -16,5 +16,10 @@ namespace CarDealerShip.Final_OOP.Honda.Sedan
         {
             InitializeComponent();
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

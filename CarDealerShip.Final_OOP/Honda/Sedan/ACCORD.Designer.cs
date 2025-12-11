@@ -29,45 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ACCORD));
-            buttonBack = new Button();
-            buttonCash = new Button();
-            buttonFinance = new Button();
             richTextBox1 = new RichTextBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            button4 = new Button();
+            button1 = new Button();
+            label3 = new Label();
+            buttonFinnace = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // buttonBack
-            // 
-            buttonBack.ImageAlign = ContentAlignment.BottomCenter;
-            buttonBack.Location = new Point(433, 344);
-            buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(75, 23);
-            buttonBack.TabIndex = 35;
-            buttonBack.Text = "Back";
-            buttonBack.UseVisualStyleBackColor = true;
-            // 
-            // buttonCash
-            // 
-            buttonCash.ImageAlign = ContentAlignment.BottomCenter;
-            buttonCash.Location = new Point(677, 344);
-            buttonCash.Name = "buttonCash";
-            buttonCash.Size = new Size(75, 23);
-            buttonCash.TabIndex = 36;
-            buttonCash.Text = "Cash";
-            buttonCash.UseVisualStyleBackColor = true;
-            // 
-            // buttonFinance
-            // 
-            buttonFinance.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinance.Location = new Point(555, 344);
-            buttonFinance.Name = "buttonFinance";
-            buttonFinance.Size = new Size(75, 23);
-            buttonFinance.TabIndex = 37;
-            buttonFinance.Text = "Finance";
-            buttonFinance.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
@@ -76,6 +47,7 @@
             richTextBox1.Size = new Size(355, 294);
             richTextBox1.TabIndex = 38;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // pictureBox1
             // 
@@ -97,31 +69,72 @@
             pictureBox2.TabIndex = 40;
             pictureBox2.TabStop = false;
             // 
+            // button4
+            // 
+            button4.ImageAlign = ContentAlignment.BottomCenter;
+            button4.Location = new Point(713, 388);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 71;
+            button4.Text = "Back";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.ImageAlign = ContentAlignment.BottomCenter;
+            button1.Location = new Point(433, 388);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 70;
+            button1.Text = "Cash";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(433, 332);
+            label3.Name = "label3";
+            label3.Size = new Size(99, 15);
+            label3.TabIndex = 69;
+            label3.Text = "Payment Method";
+            // 
+            // buttonFinnace
+            // 
+            buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
+            buttonFinnace.Location = new Point(433, 359);
+            buttonFinnace.Name = "buttonFinnace";
+            buttonFinnace.Size = new Size(75, 23);
+            buttonFinnace.TabIndex = 68;
+            buttonFinnace.Text = "Finance";
+            buttonFinnace.UseVisualStyleBackColor = true;
+            // 
             // ACCORD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
+            Controls.Add(button1);
+            Controls.Add(label3);
+            Controls.Add(buttonFinnace);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(richTextBox1);
-            Controls.Add(buttonFinance);
-            Controls.Add(buttonCash);
-            Controls.Add(buttonBack);
             Name = "ACCORD";
             Text = "ACCORD";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Button buttonBack;
-        private Button buttonCash;
-        private Button buttonFinance;
         private RichTextBox richTextBox1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Button button4;
+        private Button button1;
+        private Label label3;
+        private Button buttonFinnace;
     }
 }
