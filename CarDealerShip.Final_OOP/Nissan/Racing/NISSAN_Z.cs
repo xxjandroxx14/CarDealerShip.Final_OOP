@@ -16,5 +16,22 @@ namespace CarDealerShip.Final_OOP.Nissan.Racing
         {
             InitializeComponent();
         }
+
+        private void buttonFN_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you! We will contact you for further details.",
+                          "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void buttonCH_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you! We will contact you for further details.",
+                          "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void buttonBK_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+        }
     }
 }

@@ -31,9 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GTR_R35));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            buttonFn = new Button();
+            buttonCh = new Button();
+            buttonBk = new Button();
+            richTextBox1 = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -59,41 +60,53 @@
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
             // 
-            // button1
+            // buttonFn
             // 
-            button1.Location = new Point(397, 328);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 87;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonFn.Location = new Point(389, 333);
+            buttonFn.Name = "buttonFn";
+            buttonFn.Size = new Size(75, 23);
+            buttonFn.TabIndex = 87;
+            buttonFn.Text = "Finance";
+            buttonFn.UseVisualStyleBackColor = true;
+            buttonFn.Click += buttonFn_Click;
             // 
-            // button2
+            // buttonCh
             // 
-            button2.Location = new Point(536, 341);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 88;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            buttonCh.Location = new Point(398, 376);
+            buttonCh.Name = "buttonCh";
+            buttonCh.Size = new Size(75, 23);
+            buttonCh.TabIndex = 88;
+            buttonCh.Text = "Cash";
+            buttonCh.UseVisualStyleBackColor = true;
+            buttonCh.Click += buttonCh_Click;
             // 
-            // button3
+            // buttonBk
             // 
-            button3.Location = new Point(617, 328);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 89;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            buttonBk.Location = new Point(713, 355);
+            buttonBk.Name = "buttonBk";
+            buttonBk.Size = new Size(75, 23);
+            buttonBk.TabIndex = 89;
+            buttonBk.Text = "Back";
+            buttonBk.UseVisualStyleBackColor = true;
+            buttonBk.Click += buttonBk_Click;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(441, 5);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(334, 283);
+            richTextBox1.TabIndex = 90;
+            richTextBox1.Text = "";
             // 
             // GTR_R35
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(richTextBox1);
+            Controls.Add(buttonBk);
+            Controls.Add(buttonCh);
+            Controls.Add(buttonFn);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "GTR_R35";
@@ -107,8 +120,9 @@
 
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button buttonFn;
+        private Button buttonCh;
+        private Button buttonBk;
+        private RichTextBox richTextBox1;
     }
 }

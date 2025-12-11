@@ -60,6 +60,7 @@
             button1.TabIndex = 66;
             button1.Text = "Cash";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label3
             // 
@@ -79,6 +80,7 @@
             buttonFinnace.TabIndex = 64;
             buttonFinnace.Text = "Finance";
             buttonFinnace.UseVisualStyleBackColor = true;
+            buttonFinnace.Click += buttonFinnace_Click;
             // 
             // pictureBoxViosInterior
             // 

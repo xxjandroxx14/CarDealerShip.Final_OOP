@@ -41,30 +41,33 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(427, 340);
+            buttonBack.Location = new Point(672, 368);
             buttonBack.Name = "buttonBack";
             buttonBack.Size = new Size(75, 23);
             buttonBack.TabIndex = 44;
             buttonBack.Text = "Back";
             buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
             // 
             // ButtonFiannance
             // 
-            ButtonFiannance.Location = new Point(553, 340);
+            ButtonFiannance.Location = new Point(412, 344);
             ButtonFiannance.Name = "ButtonFiannance";
             ButtonFiannance.Size = new Size(75, 23);
             ButtonFiannance.TabIndex = 45;
             ButtonFiannance.Text = "Finnance";
             ButtonFiannance.UseVisualStyleBackColor = true;
+            ButtonFiannance.Click += ButtonFiannance_Click;
             // 
             // buttonCash
             // 
-            buttonCash.Location = new Point(670, 354);
+            buttonCash.Location = new Point(412, 383);
             buttonCash.Name = "buttonCash";
             buttonCash.Size = new Size(75, 23);
             buttonCash.TabIndex = 46;
             buttonCash.Text = "Cash";
             buttonCash.UseVisualStyleBackColor = true;
+            buttonCash.Click += buttonCash_Click;
             // 
             // pictureBox1
             // 

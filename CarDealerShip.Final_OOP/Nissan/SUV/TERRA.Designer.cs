@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TERRA));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            buttonFinance = new Button();
+            buttonCash = new Button();
+            buttonBack = new Button();
             richTextBox1 = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -59,32 +59,35 @@
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
             // 
-            // button1
+            // buttonFinance
             // 
-            button1.Location = new Point(426, 336);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 86;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonFinance.Location = new Point(391, 336);
+            buttonFinance.Name = "buttonFinance";
+            buttonFinance.Size = new Size(75, 23);
+            buttonFinance.TabIndex = 86;
+            buttonFinance.Text = "Finance";
+            buttonFinance.UseVisualStyleBackColor = true;
+            buttonFinance.Click += button1_Click;
             // 
-            // button2
+            // buttonCash
             // 
-            button2.Location = new Point(546, 336);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 87;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            buttonCash.Location = new Point(391, 383);
+            buttonCash.Name = "buttonCash";
+            buttonCash.Size = new Size(75, 23);
+            buttonCash.TabIndex = 87;
+            buttonCash.Text = "Cash";
+            buttonCash.UseVisualStyleBackColor = true;
+            buttonCash.Click += buttonCash_Click;
             // 
-            // button3
+            // buttonBack
             // 
-            button3.Location = new Point(640, 347);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 88;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            buttonBack.Location = new Point(680, 365);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 88;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
             // 
             // richTextBox1
             // 
@@ -100,9 +103,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(richTextBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonBack);
+            Controls.Add(buttonCash);
+            Controls.Add(buttonFinance);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "TERRA";
@@ -116,9 +119,9 @@
 
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button buttonFinance;
+        private Button buttonCash;
+        private Button buttonBack;
         private RichTextBox richTextBox1;
     }
 }

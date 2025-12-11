@@ -82,7 +82,7 @@
             // buttonFinnace
             // 
             buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinnace.Location = new Point(524, 382);
+            buttonFinnace.Location = new Point(424, 365);
             buttonFinnace.Name = "buttonFinnace";
             buttonFinnace.Size = new Size(75, 23);
             buttonFinnace.TabIndex = 8;
@@ -92,7 +92,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(552, 346);
+            label3.Location = new Point(424, 334);
             label3.Name = "label3";
             label3.Size = new Size(99, 15);
             label3.TabIndex = 11;
@@ -101,7 +101,7 @@
             // buttonCash
             // 
             buttonCash.ImageAlign = ContentAlignment.BottomCenter;
-            buttonCash.Location = new Point(619, 382);
+            buttonCash.Location = new Point(424, 394);
             buttonCash.Name = "buttonCash";
             buttonCash.Size = new Size(75, 23);
             buttonCash.TabIndex = 13;
@@ -111,7 +111,7 @@
             // buttonBack
             // 
             buttonBack.ImageAlign = ContentAlignment.BottomCenter;
-            buttonBack.Location = new Point(424, 382);
+            buttonBack.Location = new Point(701, 376);
             buttonBack.Name = "buttonBack";
             buttonBack.Size = new Size(75, 23);
             buttonBack.TabIndex = 54;

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CIVICTYPER));
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            buttonfe = new Button();
+            buttonch = new Button();
+            buttonBk = new Button();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             richTextBox1 = new RichTextBox();
@@ -39,32 +39,35 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // buttonfe
             // 
-            button1.Location = new Point(365, 339);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 43;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonfe.Location = new Point(381, 355);
+            buttonfe.Name = "buttonfe";
+            buttonfe.Size = new Size(75, 23);
+            buttonfe.TabIndex = 43;
+            buttonfe.Text = "Fianance";
+            buttonfe.UseVisualStyleBackColor = true;
+            buttonfe.Click += buttonfe_Click;
             // 
-            // button2
+            // buttonch
             // 
-            button2.Location = new Point(501, 355);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 44;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            buttonch.Location = new Point(381, 384);
+            buttonch.Name = "buttonch";
+            buttonch.Size = new Size(75, 23);
+            buttonch.TabIndex = 44;
+            buttonch.Text = "Cash";
+            buttonch.UseVisualStyleBackColor = true;
+            buttonch.Click += buttonch_Click;
             // 
-            // button3
+            // buttonBk
             // 
-            button3.Location = new Point(612, 355);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 45;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            buttonBk.Location = new Point(697, 372);
+            buttonBk.Name = "buttonBk";
+            buttonBk.Size = new Size(75, 23);
+            buttonBk.TabIndex = 45;
+            buttonBk.Text = "Back";
+            buttonBk.UseVisualStyleBackColor = true;
+            buttonBk.Click += buttonBk_Click;
             // 
             // pictureBox3
             // 
@@ -102,9 +105,9 @@
             Controls.Add(richTextBox1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonBk);
+            Controls.Add(buttonch);
+            Controls.Add(buttonfe);
             Name = "CIVICTYPER";
             Text = "CIVICTYPER";
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -113,9 +116,9 @@
         }
 
         #endregion
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button buttonfe;
+        private Button buttonch;
+        private Button buttonBk;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private RichTextBox richTextBox1;

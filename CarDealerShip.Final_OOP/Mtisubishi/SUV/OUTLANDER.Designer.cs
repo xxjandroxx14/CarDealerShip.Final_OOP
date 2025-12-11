@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OUTLANDER));
             button4 = new Button();
-            button1 = new Button();
+            buttonCash = new Button();
             label3 = new Label();
             buttonFinnace = new Button();
             pictureBoxViosInterior = new PictureBox();
@@ -51,15 +51,16 @@
             button4.Text = "Back";
             button4.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonCash
             // 
-            button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(378, 396);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 154;
-            button1.Text = "Cash";
-            button1.UseVisualStyleBackColor = true;
+            buttonCash.ImageAlign = ContentAlignment.BottomCenter;
+            buttonCash.Location = new Point(378, 396);
+            buttonCash.Name = "buttonCash";
+            buttonCash.Size = new Size(75, 23);
+            buttonCash.TabIndex = 154;
+            buttonCash.Text = "Cash";
+            buttonCash.UseVisualStyleBackColor = true;
+
             // 
             // label3
             // 
@@ -79,6 +80,7 @@
             buttonFinnace.TabIndex = 152;
             buttonFinnace.Text = "Finance";
             buttonFinnace.UseVisualStyleBackColor = true;
+            buttonFinnace.Click += buttonFinnace_Click;
             // 
             // pictureBoxViosInterior
             // 
@@ -125,7 +127,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button4);
-            Controls.Add(button1);
+            Controls.Add(buttonCash);
             Controls.Add(label3);
             Controls.Add(buttonFinnace);
             Controls.Add(pictureBoxViosInterior);
@@ -143,7 +145,7 @@
         #endregion
 
         private Button button4;
-        private Button button1;
+        private Button buttonCash;
         private Label label3;
         private Button buttonFinnace;
         private PictureBox pictureBoxViosInterior;

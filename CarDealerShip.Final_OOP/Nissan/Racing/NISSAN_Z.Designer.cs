@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NISSAN_Z));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            buttonFN = new Button();
+            buttonCH = new Button();
+            buttonBK = new Button();
             richTextBox1 = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -59,32 +59,35 @@
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
             // 
-            // button1
+            // buttonFN
             // 
-            button1.Location = new Point(377, 301);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 87;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonFN.Location = new Point(398, 326);
+            buttonFN.Name = "buttonFN";
+            buttonFN.Size = new Size(75, 23);
+            buttonFN.TabIndex = 87;
+            buttonFN.Text = "Finance";
+            buttonFN.UseVisualStyleBackColor = true;
+            buttonFN.Click += buttonFN_Click;
             // 
-            // button2
+            // buttonCH
             // 
-            button2.Location = new Point(486, 303);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 88;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            buttonCH.Location = new Point(410, 376);
+            buttonCH.Name = "buttonCH";
+            buttonCH.Size = new Size(75, 23);
+            buttonCH.TabIndex = 88;
+            buttonCH.Text = "Cash";
+            buttonCH.UseVisualStyleBackColor = true;
+            buttonCH.Click += buttonCH_Click;
             // 
-            // button3
+            // buttonBK
             // 
-            button3.Location = new Point(624, 305);
-            button3.Name = "button3";
-            button3.Size = new Size(97, 21);
-            button3.TabIndex = 89;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            buttonBK.Location = new Point(660, 366);
+            buttonBK.Name = "buttonBK";
+            buttonBK.Size = new Size(97, 21);
+            buttonBK.TabIndex = 89;
+            buttonBK.Text = "Back";
+            buttonBK.UseVisualStyleBackColor = true;
+            buttonBK.Click += buttonBK_Click;
             // 
             // richTextBox1
             // 
@@ -100,9 +103,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(richTextBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonBK);
+            Controls.Add(buttonCH);
+            Controls.Add(buttonFN);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "NISSAN_Z";
@@ -116,9 +119,9 @@
 
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button buttonFN;
+        private Button buttonCH;
+        private Button buttonBK;
         private RichTextBox richTextBox1;
     }
 }

@@ -35,6 +35,7 @@
             buttonfn = new Button();
             buttonCash = new Button();
             richTextBox1 = new RichTextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -61,30 +62,33 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(392, 324);
+            buttonBack.Location = new Point(713, 384);
             buttonBack.Name = "buttonBack";
             buttonBack.Size = new Size(75, 23);
             buttonBack.TabIndex = 50;
             buttonBack.Text = "Back";
             buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
             // 
             // buttonfn
             // 
-            buttonfn.Location = new Point(523, 324);
+            buttonfn.Location = new Point(368, 359);
             buttonfn.Name = "buttonfn";
             buttonfn.Size = new Size(75, 23);
             buttonfn.TabIndex = 51;
             buttonfn.Text = "Finnance";
             buttonfn.UseVisualStyleBackColor = true;
+            buttonfn.Click += buttonfn_Click;
             // 
             // buttonCash
             // 
-            buttonCash.Location = new Point(649, 324);
+            buttonCash.Location = new Point(368, 388);
             buttonCash.Name = "buttonCash";
             buttonCash.Size = new Size(75, 23);
             buttonCash.TabIndex = 52;
             buttonCash.Text = "Cash";
             buttonCash.UseVisualStyleBackColor = true;
+            buttonCash.Click += buttonCash_Click;
             // 
             // richTextBox1
             // 
@@ -94,11 +98,21 @@
             richTextBox1.TabIndex = 53;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(406, 337);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 15);
+            label1.TabIndex = 54;
+            label1.Text = "Payment Method";
+            // 
             // BRV
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(richTextBox1);
             Controls.Add(buttonCash);
             Controls.Add(buttonfn);
@@ -110,6 +124,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -120,5 +135,6 @@
         private Button buttonfn;
         private Button buttonCash;
         private RichTextBox richTextBox1;
+        private Label label1;
     }
 }

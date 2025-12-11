@@ -35,6 +35,7 @@
             richTextBox1 = new RichTextBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -42,17 +43,18 @@
             // buttonBack
             // 
             buttonBack.ImageAlign = ContentAlignment.BottomCenter;
-            buttonBack.Location = new Point(427, 345);
+            buttonBack.Location = new Point(713, 374);
             buttonBack.Name = "buttonBack";
             buttonBack.Size = new Size(75, 23);
             buttonBack.TabIndex = 35;
             buttonBack.Text = "Back";
             buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
             // 
             // button1
             // 
             button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(557, 345);
+            button1.Location = new Point(389, 336);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 36;
@@ -63,12 +65,13 @@
             // buttonCash
             // 
             buttonCash.ImageAlign = ContentAlignment.BottomCenter;
-            buttonCash.Location = new Point(655, 345);
+            buttonCash.Location = new Point(389, 374);
             buttonCash.Name = "buttonCash";
             buttonCash.Size = new Size(75, 23);
             buttonCash.TabIndex = 37;
             buttonCash.Text = "Cash";
             buttonCash.UseVisualStyleBackColor = true;
+            buttonCash.Click += buttonCash_Click;
             // 
             // richTextBox1
             // 
@@ -98,11 +101,21 @@
             pictureBox2.TabIndex = 40;
             pictureBox2.TabStop = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(389, 301);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 15);
+            label1.TabIndex = 41;
+            label1.Text = "Payment Method";
+            // 
             // CIVIC
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(richTextBox1);
@@ -114,6 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -124,5 +138,6 @@
         private RichTextBox richTextBox1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Label label1;
     }
 }
