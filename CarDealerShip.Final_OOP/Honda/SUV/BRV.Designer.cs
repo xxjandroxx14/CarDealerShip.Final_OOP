@@ -53,9 +53,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1, 235);
+            pictureBox2.Location = new Point(1, 226);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(349, 213);
+            pictureBox2.Size = new Size(365, 222);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 49;
             pictureBox2.TabStop = false;
@@ -72,17 +72,17 @@
             // 
             // buttonfn
             // 
-            buttonfn.Location = new Point(368, 359);
+            buttonfn.Location = new Point(406, 359);
             buttonfn.Name = "buttonfn";
             buttonfn.Size = new Size(75, 23);
             buttonfn.TabIndex = 51;
-            buttonfn.Text = "Finnance";
+            buttonfn.Text = "Finance";
             buttonfn.UseVisualStyleBackColor = true;
             buttonfn.Click += buttonfn_Click;
             // 
             // buttonCash
             // 
-            buttonCash.Location = new Point(368, 388);
+            buttonCash.Location = new Point(406, 388);
             buttonCash.Name = "buttonCash";
             buttonCash.Size = new Size(75, 23);
             buttonCash.TabIndex = 52;

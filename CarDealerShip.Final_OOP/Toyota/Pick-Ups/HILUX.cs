@@ -32,6 +32,7 @@ namespace CarDealerShip.Final_OOP
         private void button4_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
+            this.Close();
         }
     }
 }

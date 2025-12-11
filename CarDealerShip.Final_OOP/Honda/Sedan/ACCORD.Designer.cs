@@ -47,7 +47,7 @@
             richTextBox1.Size = new Size(355, 294);
             richTextBox1.TabIndex = 38;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            richTextBox1.TextChanged += richTextBox1_TextChanged;
+        
             // 
             // pictureBox1
             // 
@@ -62,9 +62,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 234);
+            pictureBox2.Location = new Point(3, 224);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(392, 215);
+            pictureBox2.Size = new Size(392, 225);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 40;
             pictureBox2.TabStop = false;

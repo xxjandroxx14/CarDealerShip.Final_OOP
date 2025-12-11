@@ -16,12 +16,6 @@ namespace CarDealerShip.Final_OOP.Honda.Racing
         {
             InitializeComponent();
         }
-
-        private void NSX_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void ButtonFiannance_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Thank you! We will contact you for further details.",
@@ -37,6 +31,7 @@ namespace CarDealerShip.Final_OOP.Honda.Racing
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
+            this.Close();
         }
     }
 }

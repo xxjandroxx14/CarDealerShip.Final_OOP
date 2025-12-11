@@ -31,10 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ALMERA));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            button1 = new Button();
+            buttonFianance = new Button();
             button2 = new Button();
-            button3 = new Button();
+            buttonback = new Button();
             richTextBox1 = new RichTextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -59,50 +60,63 @@
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
             // 
-            // button1
+            // buttonFianance
             // 
-            button1.Location = new Point(359, 307);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 87;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonFianance.Location = new Point(384, 352);
+            buttonFianance.Name = "buttonFianance";
+            buttonFianance.Size = new Size(75, 23);
+            buttonFianance.TabIndex = 87;
+            buttonFianance.Text = "Fianance";
+            buttonFianance.UseVisualStyleBackColor = true;
+            buttonFianance.Click += buttonFianance_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(474, 307);
+            button2.Location = new Point(384, 381);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 88;
-            button2.Text = "button2";
+            button2.Text = "Cash";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
-            // button3
+            // buttonback
             // 
-            button3.Location = new Point(579, 322);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 89;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            buttonback.Location = new Point(575, 364);
+            buttonback.Name = "buttonback";
+            buttonback.Size = new Size(75, 23);
+            buttonback.TabIndex = 89;
+            buttonback.Text = "Back";
+            buttonback.UseVisualStyleBackColor = true;
+            buttonback.Click += buttonback_Click;
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(417, 58);
+            richTextBox1.Location = new Point(370, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 96);
+            richTextBox1.Size = new Size(381, 282);
             richTextBox1.TabIndex = 91;
             richTextBox1.Text = "";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(384, 309);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 15);
+            label1.TabIndex = 92;
+            label1.Text = "Payment Method";
             // 
             // ALMERA
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(richTextBox1);
-            Controls.Add(button3);
+            Controls.Add(buttonback);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonFianance);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "ALMERA";
@@ -110,15 +124,17 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button1;
+        private Button buttonFianance;
         private Button button2;
-        private Button button3;
+        private Button buttonback;
         private RichTextBox richTextBox1;
+        private Label label1;
     }
 }

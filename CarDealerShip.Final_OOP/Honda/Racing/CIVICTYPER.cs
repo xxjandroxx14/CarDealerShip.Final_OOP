@@ -31,7 +31,10 @@ namespace CarDealerShip.Final_OOP.Honda.Racing
 
         private void buttonBk_Click(object sender, EventArgs e)
         {
+           
+
             Menu menu = new Menu();
+            this.Close();
         }
     }
 }

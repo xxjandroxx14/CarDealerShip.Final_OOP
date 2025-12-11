@@ -44,17 +44,18 @@
             // button1
             // 
             button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(591, 382);
+            button1.Location = new Point(421, 393);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 29;
             button1.Text = "Cash";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(538, 346);
+            label3.Location = new Point(421, 346);
             label3.Name = "label3";
             label3.Size = new Size(99, 15);
             label3.TabIndex = 28;
@@ -63,12 +64,13 @@
             // buttonFinnace
             // 
             buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinnace.Location = new Point(510, 382);
+            buttonFinnace.Location = new Point(430, 364);
             buttonFinnace.Name = "buttonFinnace";
             buttonFinnace.Size = new Size(75, 23);
             buttonFinnace.TabIndex = 27;
             buttonFinnace.Text = "Finance";
             buttonFinnace.UseVisualStyleBackColor = true;
+            buttonFinnace.Click += buttonFinnace_Click;
             // 
             // pictureBoxViosInterior
             // 
@@ -111,7 +113,7 @@
             // buttonBack
             // 
             buttonBack.ImageAlign = ContentAlignment.BottomCenter;
-            buttonBack.Location = new Point(402, 373);
+            buttonBack.Location = new Point(700, 394);
             buttonBack.Name = "buttonBack";
             buttonBack.Size = new Size(75, 23);
             buttonBack.TabIndex = 30;

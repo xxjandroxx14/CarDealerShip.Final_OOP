@@ -16,5 +16,23 @@ namespace CarDealerShip.Final_OOP.Nissan.Sedan
         {
             InitializeComponent();
         }
+
+        private void buttonFianance_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you! We will contact you for further details.",
+                          "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you! We will contact you for further details.",
+                          "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void buttonback_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            this.Close();
+        }
     }
 }

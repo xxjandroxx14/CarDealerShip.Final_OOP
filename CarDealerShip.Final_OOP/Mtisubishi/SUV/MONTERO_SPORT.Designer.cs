@@ -86,9 +86,9 @@
             // pictureBoxViosInterior
             // 
             pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
-            pictureBoxViosInterior.Location = new Point(8, 237);
+            pictureBoxViosInterior.Location = new Point(-3, 236);
             pictureBoxViosInterior.Name = "pictureBoxViosInterior";
-            pictureBoxViosInterior.Size = new Size(331, 201);
+            pictureBoxViosInterior.Size = new Size(331, 220);
             pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxViosInterior.TabIndex = 143;
             pictureBoxViosInterior.TabStop = false;
@@ -115,9 +115,9 @@
             // 
             pictureBoxVios.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBoxVios.Image = (Image)resources.GetObject("pictureBoxVios.Image");
-            pictureBoxVios.Location = new Point(8, 13);
+            pictureBoxVios.Location = new Point(-3, 1);
             pictureBoxVios.Name = "pictureBoxVios";
-            pictureBoxVios.Size = new Size(331, 213);
+            pictureBoxVios.Size = new Size(331, 239);
             pictureBoxVios.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxVios.TabIndex = 140;
             pictureBoxVios.TabStop = false;

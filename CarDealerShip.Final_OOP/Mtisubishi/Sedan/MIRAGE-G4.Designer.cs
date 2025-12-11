@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MIRAGE_G4));
-            button4 = new Button();
+            buttonBack = new Button();
             button1 = new Button();
             label3 = new Label();
             buttonFinnace = new Button();
@@ -41,15 +41,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             SuspendLayout();
             // 
-            // button4
+            // buttonBack
             // 
-            button4.ImageAlign = ContentAlignment.BottomCenter;
-            button4.Location = new Point(709, 396);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 139;
-            button4.Text = "Back";
-            button4.UseVisualStyleBackColor = true;
+            buttonBack.ImageAlign = ContentAlignment.BottomCenter;
+            buttonBack.Location = new Point(709, 396);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 139;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click_1;
             // 
             // button1
             // 
@@ -60,6 +61,7 @@
             button1.TabIndex = 138;
             button1.Text = "Cash";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label3
             // 
@@ -79,13 +81,14 @@
             buttonFinnace.TabIndex = 136;
             buttonFinnace.Text = "Finance";
             buttonFinnace.UseVisualStyleBackColor = true;
+            buttonFinnace.Click += buttonFinnace_Click;
             // 
             // pictureBoxViosInterior
             // 
             pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
-            pictureBoxViosInterior.Location = new Point(8, 237);
+            pictureBoxViosInterior.Location = new Point(-1, 232);
             pictureBoxViosInterior.Name = "pictureBoxViosInterior";
-            pictureBoxViosInterior.Size = new Size(331, 201);
+            pictureBoxViosInterior.Size = new Size(340, 217);
             pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxViosInterior.TabIndex = 135;
             pictureBoxViosInterior.TabStop = false;
@@ -112,9 +115,9 @@
             // 
             pictureBoxVios.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBoxVios.Image = (Image)resources.GetObject("pictureBoxVios.Image");
-            pictureBoxVios.Location = new Point(8, 13);
+            pictureBoxVios.Location = new Point(-1, 1);
             pictureBoxVios.Name = "pictureBoxVios";
-            pictureBoxVios.Size = new Size(331, 213);
+            pictureBoxVios.Size = new Size(340, 234);
             pictureBoxVios.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxVios.TabIndex = 132;
             pictureBoxVios.TabStop = false;
@@ -124,7 +127,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button4);
+            Controls.Add(buttonBack);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(buttonFinnace);
@@ -142,7 +145,7 @@
 
         #endregion
 
-        private Button button4;
+        private Button buttonBack;
         private Button button1;
         private Label label3;
         private Button buttonFinnace;

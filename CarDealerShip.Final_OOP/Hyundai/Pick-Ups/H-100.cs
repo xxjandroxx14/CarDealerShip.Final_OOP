@@ -16,5 +16,24 @@ namespace CarDealerShip.Final_OOP.Hyundai.Pick_Ups
         {
             InitializeComponent();
         }
+
+        private void buttonFinnace_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you! We will contact you for further details.",
+                          "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void buttonCash_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you! We will contact you for further details.",
+                          "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            this.Close();
+        }
     }
 }

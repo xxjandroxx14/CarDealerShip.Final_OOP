@@ -50,6 +50,7 @@
             button4.TabIndex = 107;
             button4.Text = "Back";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button1
             // 
@@ -60,6 +61,7 @@
             button1.TabIndex = 106;
             button1.Text = "Cash";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label3
             // 
@@ -79,13 +81,14 @@
             buttonFinnace.TabIndex = 104;
             buttonFinnace.Text = "Finance";
             buttonFinnace.UseVisualStyleBackColor = true;
+            buttonFinnace.Click += buttonFinnace_Click;
             // 
             // pictureBoxViosInterior
             // 
             pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
-            pictureBoxViosInterior.Location = new Point(8, 237);
+            pictureBoxViosInterior.Location = new Point(-5, 234);
             pictureBoxViosInterior.Name = "pictureBoxViosInterior";
-            pictureBoxViosInterior.Size = new Size(331, 201);
+            pictureBoxViosInterior.Size = new Size(331, 216);
             pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxViosInterior.TabIndex = 103;
             pictureBoxViosInterior.TabStop = false;
@@ -112,9 +115,9 @@
             // 
             pictureBoxVios.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBoxVios.Image = (Image)resources.GetObject("pictureBoxVios.Image");
-            pictureBoxVios.Location = new Point(8, 13);
+            pictureBoxVios.Location = new Point(-5, 0);
             pictureBoxVios.Name = "pictureBoxVios";
-            pictureBoxVios.Size = new Size(331, 213);
+            pictureBoxVios.Size = new Size(331, 242);
             pictureBoxVios.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxVios.TabIndex = 100;
             pictureBoxVios.TabStop = false;

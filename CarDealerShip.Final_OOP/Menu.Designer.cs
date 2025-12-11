@@ -59,7 +59,6 @@
             pICKUPToolStripMenuItem = new ToolStripMenuItem();
             hONDACIVICTYPERToolStripMenuItem = new ToolStripMenuItem();
             nSXToolStripMenuItem = new ToolStripMenuItem();
-            sUVToolStripMenuItem5 = new ToolStripMenuItem();
             mITSUBISHIToolStripMenuItem = new ToolStripMenuItem();
             exploreVehicleToolStripMenuItem1 = new ToolStripMenuItem();
             sEDANToolStripMenuItem1 = new ToolStripMenuItem();
@@ -116,46 +115,45 @@
             brandsToolStripMenuItem.Name = "brandsToolStripMenuItem";
             brandsToolStripMenuItem.Size = new Size(64, 20);
             brandsToolStripMenuItem.Text = "BRANDS";
-
             // 
             // tOYOTAToolStripMenuItem
             // 
             tOYOTAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { exploreVehicleToolStripMenuItem, sedToolStripMenuItem, sUVToolStripMenuItem, pICKUPSToolStripMenuItem, rACINGToolStripMenuItem });
             tOYOTAToolStripMenuItem.Name = "tOYOTAToolStripMenuItem";
-            tOYOTAToolStripMenuItem.Size = new Size(180, 22);
+            tOYOTAToolStripMenuItem.Size = new Size(137, 22);
             tOYOTAToolStripMenuItem.Text = "TOYOTA";
             // 
             // exploreVehicleToolStripMenuItem
             // 
             exploreVehicleToolStripMenuItem.Name = "exploreVehicleToolStripMenuItem";
-            exploreVehicleToolStripMenuItem.Size = new Size(153, 22);
+            exploreVehicleToolStripMenuItem.Size = new Size(152, 22);
             exploreVehicleToolStripMenuItem.Text = "Explore Vehicle";
             // 
             // sedToolStripMenuItem
             // 
             sedToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { vIOSToolStripMenuItem, cORROLAAXIOToolStripMenuItem, cAMRYToolStripMenuItem });
             sedToolStripMenuItem.Name = "sedToolStripMenuItem";
-            sedToolStripMenuItem.Size = new Size(153, 22);
+            sedToolStripMenuItem.Size = new Size(152, 22);
             sedToolStripMenuItem.Text = "SEDAN";
             // 
             // vIOSToolStripMenuItem
             // 
             vIOSToolStripMenuItem.Name = "vIOSToolStripMenuItem";
-            vIOSToolStripMenuItem.Size = new Size(158, 22);
+            vIOSToolStripMenuItem.Size = new Size(180, 22);
             vIOSToolStripMenuItem.Text = "VIOS";
             vIOSToolStripMenuItem.Click += vIOSToolStripMenuItem_Click;
             // 
             // cORROLAAXIOToolStripMenuItem
             // 
             cORROLAAXIOToolStripMenuItem.Name = "cORROLAAXIOToolStripMenuItem";
-            cORROLAAXIOToolStripMenuItem.Size = new Size(158, 22);
+            cORROLAAXIOToolStripMenuItem.Size = new Size(180, 22);
             cORROLAAXIOToolStripMenuItem.Text = "CORROLA AXIO";
             cORROLAAXIOToolStripMenuItem.Click += cORROLAAXIOToolStripMenuItem_Click;
             // 
             // cAMRYToolStripMenuItem
             // 
             cAMRYToolStripMenuItem.Name = "cAMRYToolStripMenuItem";
-            cAMRYToolStripMenuItem.Size = new Size(158, 22);
+            cAMRYToolStripMenuItem.Size = new Size(180, 22);
             cAMRYToolStripMenuItem.Text = "CAMRY";
             cAMRYToolStripMenuItem.Click += cAMRYToolStripMenuItem_Click;
             // 
@@ -163,7 +161,7 @@
             // 
             sUVToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { vELOZToolStripMenuItem, sEQUOIToolStripMenuItem });
             sUVToolStripMenuItem.Name = "sUVToolStripMenuItem";
-            sUVToolStripMenuItem.Size = new Size(153, 22);
+            sUVToolStripMenuItem.Size = new Size(152, 22);
             sUVToolStripMenuItem.Text = "SUV";
             // 
             // vELOZToolStripMenuItem
@@ -184,26 +182,27 @@
             // 
             pICKUPSToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tUNDRAToolStripMenuItem, hUILUXToolStripMenuItem, tACOMAToolStripMenuItem });
             pICKUPSToolStripMenuItem.Name = "pICKUPSToolStripMenuItem";
-            pICKUPSToolStripMenuItem.Size = new Size(153, 22);
+            pICKUPSToolStripMenuItem.Size = new Size(152, 22);
             pICKUPSToolStripMenuItem.Text = "PICK-UPS";
             // 
             // tUNDRAToolStripMenuItem
             // 
             tUNDRAToolStripMenuItem.Name = "tUNDRAToolStripMenuItem";
-            tUNDRAToolStripMenuItem.Size = new Size(123, 22);
+            tUNDRAToolStripMenuItem.Size = new Size(124, 22);
             tUNDRAToolStripMenuItem.Text = "TUNDRA";
             tUNDRAToolStripMenuItem.Click += tUNDRAToolStripMenuItem_Click;
             // 
             // hUILUXToolStripMenuItem
             // 
             hUILUXToolStripMenuItem.Name = "hUILUXToolStripMenuItem";
-            hUILUXToolStripMenuItem.Size = new Size(123, 22);
+            hUILUXToolStripMenuItem.Size = new Size(124, 22);
             hUILUXToolStripMenuItem.Text = "HILUX";
+            hUILUXToolStripMenuItem.Click += hUILUXToolStripMenuItem_Click;
             // 
             // tACOMAToolStripMenuItem
             // 
             tACOMAToolStripMenuItem.Name = "tACOMAToolStripMenuItem";
-            tACOMAToolStripMenuItem.Size = new Size(123, 22);
+            tACOMAToolStripMenuItem.Size = new Size(124, 22);
             tACOMAToolStripMenuItem.Text = "TACOMA";
             tACOMAToolStripMenuItem.Click += tACOMAToolStripMenuItem_Click;
             // 
@@ -211,7 +210,7 @@
             // 
             rACINGToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { gRSUPRAToolStripMenuItem, gR86ToolStripMenuItem, gRYARISToolStripMenuItem });
             rACINGToolStripMenuItem.Name = "rACINGToolStripMenuItem";
-            rACINGToolStripMenuItem.Size = new Size(153, 22);
+            rACINGToolStripMenuItem.Size = new Size(152, 22);
             rACINGToolStripMenuItem.Text = "RACING";
             // 
             // gRSUPRAToolStripMenuItem
@@ -237,10 +236,11 @@
             // 
             // hONDAToolStripMenuItem
             // 
-            hONDAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { eploreVehiclesToolStripMenuItem, sEDANToolStripMenuItem, sUVToolStripMenuItem1, pICKUPToolStripMenuItem, sUVToolStripMenuItem5 });
+            hONDAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { eploreVehiclesToolStripMenuItem, sEDANToolStripMenuItem, sUVToolStripMenuItem1, pICKUPToolStripMenuItem });
             hONDAToolStripMenuItem.Name = "hONDAToolStripMenuItem";
-            hONDAToolStripMenuItem.Size = new Size(180, 22);
+            hONDAToolStripMenuItem.Size = new Size(137, 22);
             hONDAToolStripMenuItem.Text = "HONDA";
+            
             // 
             // eploreVehiclesToolStripMenuItem
             // 
@@ -307,41 +307,35 @@
             // hONDACIVICTYPERToolStripMenuItem
             // 
             hONDACIVICTYPERToolStripMenuItem.Name = "hONDACIVICTYPERToolStripMenuItem";
-            hONDACIVICTYPERToolStripMenuItem.Size = new Size(145, 22);
+            hONDACIVICTYPERToolStripMenuItem.Size = new Size(146, 22);
             hONDACIVICTYPERToolStripMenuItem.Text = " CIVIC TYPE R";
             hONDACIVICTYPERToolStripMenuItem.Click += hONDACIVICTYPERToolStripMenuItem_Click;
             // 
             // nSXToolStripMenuItem
             // 
             nSXToolStripMenuItem.Name = "nSXToolStripMenuItem";
-            nSXToolStripMenuItem.Size = new Size(145, 22);
+            nSXToolStripMenuItem.Size = new Size(146, 22);
             nSXToolStripMenuItem.Text = "NSX";
             nSXToolStripMenuItem.Click += nSXToolStripMenuItem_Click;
-            // 
-            // sUVToolStripMenuItem5
-            // 
-            sUVToolStripMenuItem5.Name = "sUVToolStripMenuItem5";
-            sUVToolStripMenuItem5.Size = new Size(152, 22);
-            sUVToolStripMenuItem5.Text = "SUV";
             // 
             // mITSUBISHIToolStripMenuItem
             // 
             mITSUBISHIToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { exploreVehicleToolStripMenuItem1, sEDANToolStripMenuItem1, sUVToolStripMenuItem2, pICKUPToolStripMenuItem1, rACINGToolStripMenuItem1 });
             mITSUBISHIToolStripMenuItem.Name = "mITSUBISHIToolStripMenuItem";
-            mITSUBISHIToolStripMenuItem.Size = new Size(180, 22);
+            mITSUBISHIToolStripMenuItem.Size = new Size(137, 22);
             mITSUBISHIToolStripMenuItem.Text = "NISSAN";
             // 
             // exploreVehicleToolStripMenuItem1
             // 
             exploreVehicleToolStripMenuItem1.Name = "exploreVehicleToolStripMenuItem1";
-            exploreVehicleToolStripMenuItem1.Size = new Size(153, 22);
+            exploreVehicleToolStripMenuItem1.Size = new Size(152, 22);
             exploreVehicleToolStripMenuItem1.Text = "Explore Vehicle";
             // 
             // sEDANToolStripMenuItem1
             // 
             sEDANToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { aLMERAToolStripMenuItem, sYLPHYToolStripMenuItem });
             sEDANToolStripMenuItem1.Name = "sEDANToolStripMenuItem1";
-            sEDANToolStripMenuItem1.Size = new Size(153, 22);
+            sEDANToolStripMenuItem1.Size = new Size(152, 22);
             sEDANToolStripMenuItem1.Text = "SEDAN";
             // 
             // aLMERAToolStripMenuItem
@@ -362,20 +356,20 @@
             // 
             sUVToolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { tERRAToolStripMenuItem, pATROLToolStripMenuItem1 });
             sUVToolStripMenuItem2.Name = "sUVToolStripMenuItem2";
-            sUVToolStripMenuItem2.Size = new Size(153, 22);
+            sUVToolStripMenuItem2.Size = new Size(152, 22);
             sUVToolStripMenuItem2.Text = "SUV";
             // 
             // tERRAToolStripMenuItem
             // 
             tERRAToolStripMenuItem.Name = "tERRAToolStripMenuItem";
-            tERRAToolStripMenuItem.Size = new Size(115, 22);
+            tERRAToolStripMenuItem.Size = new Size(116, 22);
             tERRAToolStripMenuItem.Text = "TERRA";
             tERRAToolStripMenuItem.Click += tERRAToolStripMenuItem_Click;
             // 
             // pATROLToolStripMenuItem1
             // 
             pATROLToolStripMenuItem1.Name = "pATROLToolStripMenuItem1";
-            pATROLToolStripMenuItem1.Size = new Size(115, 22);
+            pATROLToolStripMenuItem1.Size = new Size(116, 22);
             pATROLToolStripMenuItem1.Text = "PATROL";
             pATROLToolStripMenuItem1.Click += pATROLToolStripMenuItem1_Click;
             // 
@@ -383,7 +377,7 @@
             // 
             pICKUPToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { nAVARRAPROToolStripMenuItem });
             pICKUPToolStripMenuItem1.Name = "pICKUPToolStripMenuItem1";
-            pICKUPToolStripMenuItem1.Size = new Size(153, 22);
+            pICKUPToolStripMenuItem1.Size = new Size(152, 22);
             pICKUPToolStripMenuItem1.Text = "PICK-UP";
             // 
             // nAVARRAPROToolStripMenuItem
@@ -397,8 +391,9 @@
             // 
             rACINGToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { nISSANZToolStripMenuItem, gTRR35ToolStripMenuItem });
             rACINGToolStripMenuItem1.Name = "rACINGToolStripMenuItem1";
-            rACINGToolStripMenuItem1.Size = new Size(153, 22);
+            rACINGToolStripMenuItem1.Size = new Size(152, 22);
             rACINGToolStripMenuItem1.Text = "RACING";
+          
             // 
             // nISSANZToolStripMenuItem
             // 
@@ -418,33 +413,33 @@
             // 
             mITSUBISHIToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { exploreVehiclesToolStripMenuItem, sEDANToolStripMenuItem2, sUVToolStripMenuItem3, pICKUPToolStripMenuItem2, rACINGToolStripMenuItem2 });
             mITSUBISHIToolStripMenuItem1.Name = "mITSUBISHIToolStripMenuItem1";
-            mITSUBISHIToolStripMenuItem1.Size = new Size(180, 22);
+            mITSUBISHIToolStripMenuItem1.Size = new Size(137, 22);
             mITSUBISHIToolStripMenuItem1.Text = "HYUNDAI";
             // 
             // exploreVehiclesToolStripMenuItem
             // 
             exploreVehiclesToolStripMenuItem.Name = "exploreVehiclesToolStripMenuItem";
-            exploreVehiclesToolStripMenuItem.Size = new Size(158, 22);
+            exploreVehiclesToolStripMenuItem.Size = new Size(157, 22);
             exploreVehiclesToolStripMenuItem.Text = "Explore Vehicles";
             // 
             // sEDANToolStripMenuItem2
             // 
             sEDANToolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { eLANTRAToolStripMenuItem, aCCENTToolStripMenuItem });
             sEDANToolStripMenuItem2.Name = "sEDANToolStripMenuItem2";
-            sEDANToolStripMenuItem2.Size = new Size(158, 22);
+            sEDANToolStripMenuItem2.Size = new Size(157, 22);
             sEDANToolStripMenuItem2.Text = "SEDAN";
             // 
             // eLANTRAToolStripMenuItem
             // 
             eLANTRAToolStripMenuItem.Name = "eLANTRAToolStripMenuItem";
-            eLANTRAToolStripMenuItem.Size = new Size(124, 22);
+            eLANTRAToolStripMenuItem.Size = new Size(125, 22);
             eLANTRAToolStripMenuItem.Text = "ELANTRA";
             eLANTRAToolStripMenuItem.Click += eLANTRAToolStripMenuItem_Click;
             // 
             // aCCENTToolStripMenuItem
             // 
             aCCENTToolStripMenuItem.Name = "aCCENTToolStripMenuItem";
-            aCCENTToolStripMenuItem.Size = new Size(124, 22);
+            aCCENTToolStripMenuItem.Size = new Size(125, 22);
             aCCENTToolStripMenuItem.Text = "ACCENT";
             aCCENTToolStripMenuItem.Click += aCCENTToolStripMenuItem_Click;
             // 
@@ -452,27 +447,27 @@
             // 
             sUVToolStripMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { tUCSONToolStripMenuItem, cRETAToolStripMenuItem, sANTAFEToolStripMenuItem });
             sUVToolStripMenuItem3.Name = "sUVToolStripMenuItem3";
-            sUVToolStripMenuItem3.Size = new Size(158, 22);
+            sUVToolStripMenuItem3.Size = new Size(157, 22);
             sUVToolStripMenuItem3.Text = "SUV";
             // 
             // tUCSONToolStripMenuItem
             // 
             tUCSONToolStripMenuItem.Name = "tUCSONToolStripMenuItem";
-            tUCSONToolStripMenuItem.Size = new Size(125, 22);
+            tUCSONToolStripMenuItem.Size = new Size(126, 22);
             tUCSONToolStripMenuItem.Text = "TUCSON";
             tUCSONToolStripMenuItem.Click += tUCSONToolStripMenuItem_Click;
             // 
             // cRETAToolStripMenuItem
             // 
             cRETAToolStripMenuItem.Name = "cRETAToolStripMenuItem";
-            cRETAToolStripMenuItem.Size = new Size(125, 22);
+            cRETAToolStripMenuItem.Size = new Size(126, 22);
             cRETAToolStripMenuItem.Text = "CRETA";
             cRETAToolStripMenuItem.Click += cRETAToolStripMenuItem_Click;
             // 
             // sANTAFEToolStripMenuItem
             // 
             sANTAFEToolStripMenuItem.Name = "sANTAFEToolStripMenuItem";
-            sANTAFEToolStripMenuItem.Size = new Size(125, 22);
+            sANTAFEToolStripMenuItem.Size = new Size(126, 22);
             sANTAFEToolStripMenuItem.Text = "SANTA FE";
             sANTAFEToolStripMenuItem.Click += sANTAFEToolStripMenuItem_Click;
             // 
@@ -480,7 +475,7 @@
             // 
             pICKUPToolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { h100ToolStripMenuItem });
             pICKUPToolStripMenuItem2.Name = "pICKUPToolStripMenuItem2";
-            pICKUPToolStripMenuItem2.Size = new Size(158, 22);
+            pICKUPToolStripMenuItem2.Size = new Size(157, 22);
             pICKUPToolStripMenuItem2.Text = "PICK-UP";
             // 
             // h100ToolStripMenuItem
@@ -494,13 +489,13 @@
             // 
             rACINGToolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { eLANTRANToolStripMenuItem });
             rACINGToolStripMenuItem2.Name = "rACINGToolStripMenuItem2";
-            rACINGToolStripMenuItem2.Size = new Size(158, 22);
+            rACINGToolStripMenuItem2.Size = new Size(157, 22);
             rACINGToolStripMenuItem2.Text = "RACING";
             // 
             // eLANTRANToolStripMenuItem
             // 
             eLANTRANToolStripMenuItem.Name = "eLANTRANToolStripMenuItem";
-            eLANTRANToolStripMenuItem.Size = new Size(136, 22);
+            eLANTRANToolStripMenuItem.Size = new Size(137, 22);
             eLANTRANToolStripMenuItem.Text = "ELANTRA N";
             eLANTRANToolStripMenuItem.Click += eLANTRANToolStripMenuItem_Click;
             // 
@@ -508,20 +503,20 @@
             // 
             mITSUBISHIToolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { mIRAGEG4ToolStripMenuItem, mONTEROSPORTToolStripMenuItem, sUVToolStripMenuItem4, pICKUPToolStripMenuItem3, rACINGToolStripMenuItem3 });
             mITSUBISHIToolStripMenuItem2.Name = "mITSUBISHIToolStripMenuItem2";
-            mITSUBISHIToolStripMenuItem2.Size = new Size(180, 22);
+            mITSUBISHIToolStripMenuItem2.Size = new Size(137, 22);
             mITSUBISHIToolStripMenuItem2.Text = "MITSUBISHI";
             // 
             // mIRAGEG4ToolStripMenuItem
             // 
             mIRAGEG4ToolStripMenuItem.Name = "mIRAGEG4ToolStripMenuItem";
-            mIRAGEG4ToolStripMenuItem.Size = new Size(146, 22);
+            mIRAGEG4ToolStripMenuItem.Size = new Size(180, 22);
             mIRAGEG4ToolStripMenuItem.Text = "Exlore Vehicle";
             // 
             // mONTEROSPORTToolStripMenuItem
             // 
             mONTEROSPORTToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mIRRAGEG4ToolStripMenuItem });
             mONTEROSPORTToolStripMenuItem.Name = "mONTEROSPORTToolStripMenuItem";
-            mONTEROSPORTToolStripMenuItem.Size = new Size(146, 22);
+            mONTEROSPORTToolStripMenuItem.Size = new Size(180, 22);
             mONTEROSPORTToolStripMenuItem.Text = "SEDAN";
             // 
             // mIRRAGEG4ToolStripMenuItem
@@ -535,27 +530,27 @@
             // 
             sUVToolStripMenuItem4.DropDownItems.AddRange(new ToolStripItem[] { mONTEROSPORTToolStripMenuItem1, xFOCEToolStripMenuItem, oUTLANDERToolStripMenuItem });
             sUVToolStripMenuItem4.Name = "sUVToolStripMenuItem4";
-            sUVToolStripMenuItem4.Size = new Size(146, 22);
+            sUVToolStripMenuItem4.Size = new Size(180, 22);
             sUVToolStripMenuItem4.Text = "SUV";
             // 
             // mONTEROSPORTToolStripMenuItem1
             // 
             mONTEROSPORTToolStripMenuItem1.Name = "mONTEROSPORTToolStripMenuItem1";
-            mONTEROSPORTToolStripMenuItem1.Size = new Size(168, 22);
+            mONTEROSPORTToolStripMenuItem1.Size = new Size(170, 22);
             mONTEROSPORTToolStripMenuItem1.Text = "MONTERO SPORT";
             mONTEROSPORTToolStripMenuItem1.Click += mONTEROSPORTToolStripMenuItem1_Click;
             // 
             // xFOCEToolStripMenuItem
             // 
             xFOCEToolStripMenuItem.Name = "xFOCEToolStripMenuItem";
-            xFOCEToolStripMenuItem.Size = new Size(168, 22);
+            xFOCEToolStripMenuItem.Size = new Size(170, 22);
             xFOCEToolStripMenuItem.Text = "X FORCE";
             xFOCEToolStripMenuItem.Click += xFOCEToolStripMenuItem_Click;
             // 
             // oUTLANDERToolStripMenuItem
             // 
             oUTLANDERToolStripMenuItem.Name = "oUTLANDERToolStripMenuItem";
-            oUTLANDERToolStripMenuItem.Size = new Size(168, 22);
+            oUTLANDERToolStripMenuItem.Size = new Size(170, 22);
             oUTLANDERToolStripMenuItem.Text = "OUTLANDER";
             oUTLANDERToolStripMenuItem.Click += oUTLANDERToolStripMenuItem_Click;
             // 
@@ -563,13 +558,13 @@
             // 
             pICKUPToolStripMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { tRITONToolStripMenuItem });
             pICKUPToolStripMenuItem3.Name = "pICKUPToolStripMenuItem3";
-            pICKUPToolStripMenuItem3.Size = new Size(146, 22);
+            pICKUPToolStripMenuItem3.Size = new Size(180, 22);
             pICKUPToolStripMenuItem3.Text = "PICK-UP";
             // 
             // tRITONToolStripMenuItem
             // 
             tRITONToolStripMenuItem.Name = "tRITONToolStripMenuItem";
-            tRITONToolStripMenuItem.Size = new Size(113, 22);
+            tRITONToolStripMenuItem.Size = new Size(115, 22);
             tRITONToolStripMenuItem.Text = "TRITON";
             tRITONToolStripMenuItem.Click += tRITONToolStripMenuItem_Click;
             // 
@@ -577,13 +572,13 @@
             // 
             rACINGToolStripMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { lANCEREVOToolStripMenuItem });
             rACINGToolStripMenuItem3.Name = "rACINGToolStripMenuItem3";
-            rACINGToolStripMenuItem3.Size = new Size(146, 22);
+            rACINGToolStripMenuItem3.Size = new Size(180, 22);
             rACINGToolStripMenuItem3.Text = "RACING";
             // 
             // lANCEREVOToolStripMenuItem
             // 
             lANCEREVOToolStripMenuItem.Name = "lANCEREVOToolStripMenuItem";
-            lANCEREVOToolStripMenuItem.Size = new Size(143, 22);
+            lANCEREVOToolStripMenuItem.Size = new Size(180, 22);
             lANCEREVOToolStripMenuItem.Text = "LANCER EVO";
             lANCEREVOToolStripMenuItem.Click += lANCEREVOToolStripMenuItem_Click;
             // 
@@ -596,6 +591,7 @@
             MainMenuStrip = menuStrip1;
             Name = "Menu";
             Text = "Menu";
+         
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -673,6 +669,5 @@
         private ToolStripMenuItem lANCEREVOToolStripMenuItem;
         private ToolStripMenuItem oUTLANDERToolStripMenuItem;
         private ToolStripMenuItem aCCENTToolStripMenuItem;
-        private ToolStripMenuItem sUVToolStripMenuItem5;
     }
 }

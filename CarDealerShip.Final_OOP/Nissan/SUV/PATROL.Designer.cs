@@ -31,10 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PATROL));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            button4 = new Button();
-            button1 = new Button();
-            button2 = new Button();
+            buttonBK = new Button();
+            buttonFN = new Button();
+            buttonCE = new Button();
             richTextBox1 = new RichTextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -44,7 +45,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(-3, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(287, 229);
+            pictureBox1.Size = new Size(332, 237);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 84;
             pictureBox1.TabStop = false;
@@ -52,57 +53,70 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(-3, 225);
+            pictureBox2.Location = new Point(-3, 235);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(332, 203);
+            pictureBox2.Size = new Size(332, 219);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
             // 
-            // button4
+            // buttonBK
             // 
-            button4.Location = new Point(659, 311);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 91;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            buttonBK.Location = new Point(655, 342);
+            buttonBK.Name = "buttonBK";
+            buttonBK.Size = new Size(75, 23);
+            buttonBK.TabIndex = 91;
+            buttonBK.Text = "Back";
+            buttonBK.UseVisualStyleBackColor = true;
+            buttonBK.Click += buttonBK_Click;
             // 
-            // button1
+            // buttonFN
             // 
-            button1.Location = new Point(424, 311);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 92;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonFN.Location = new Point(439, 342);
+            buttonFN.Name = "buttonFN";
+            buttonFN.Size = new Size(75, 23);
+            buttonFN.TabIndex = 92;
+            buttonFN.Text = "Finance";
+            buttonFN.UseVisualStyleBackColor = true;
+            buttonFN.Click += buttonFN_Click;
             // 
-            // button2
+            // buttonCE
             // 
-            button2.Location = new Point(549, 311);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 93;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            buttonCE.Location = new Point(439, 387);
+            buttonCE.Name = "buttonCE";
+            buttonCE.Size = new Size(75, 23);
+            buttonCE.TabIndex = 93;
+            buttonCE.Text = "Cash";
+            buttonCE.UseVisualStyleBackColor = true;
+            buttonCE.Click += buttonCE_Click;
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(424, 25);
+            richTextBox1.Location = new Point(424, 24);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(321, 204);
+            richTextBox1.Size = new Size(321, 246);
             richTextBox1.TabIndex = 94;
             richTextBox1.Text = "";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(424, 296);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 15);
+            label1.TabIndex = 95;
+            label1.Text = "Payment Method";
             // 
             // PATROL
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(richTextBox1);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(button4);
+            Controls.Add(buttonCE);
+            Controls.Add(buttonFN);
+            Controls.Add(buttonBK);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "PATROL";
@@ -110,15 +124,17 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button4;
-        private Button button1;
-        private Button button2;
+        private Button buttonBK;
+        private Button buttonFN;
+        private Button buttonCE;
         private RichTextBox richTextBox1;
+        private Label label1;
     }
 }

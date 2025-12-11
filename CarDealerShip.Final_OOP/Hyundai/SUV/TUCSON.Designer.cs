@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TUCSON));
-            button4 = new Button();
-            button1 = new Button();
+            buttonBK = new Button();
+            buttonCE = new Button();
             label3 = new Label();
             buttonFinnace = new Button();
             pictureBoxViosInterior = new PictureBox();
@@ -41,25 +41,26 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             SuspendLayout();
             // 
-            // button4
+            // buttonBK
             // 
-            button4.ImageAlign = ContentAlignment.BottomCenter;
-            button4.Location = new Point(709, 396);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 115;
-            button4.Text = "Back";
-            button4.UseVisualStyleBackColor = true;
+            buttonBK.ImageAlign = ContentAlignment.BottomCenter;
+            buttonBK.Location = new Point(709, 396);
+            buttonBK.Name = "buttonBK";
+            buttonBK.Size = new Size(75, 23);
+            buttonBK.TabIndex = 115;
+            buttonBK.Text = "Back";
+            buttonBK.UseVisualStyleBackColor = true;
+            buttonBK.Click += buttonBK_Click;
             // 
-            // button1
+            // buttonCE
             // 
-            button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(378, 396);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 114;
-            button1.Text = "Cash";
-            button1.UseVisualStyleBackColor = true;
+            buttonCE.ImageAlign = ContentAlignment.BottomCenter;
+            buttonCE.Location = new Point(378, 396);
+            buttonCE.Name = "buttonCE";
+            buttonCE.Size = new Size(75, 23);
+            buttonCE.TabIndex = 114;
+            buttonCE.Text = "Cash";
+            buttonCE.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -79,13 +80,14 @@
             buttonFinnace.TabIndex = 112;
             buttonFinnace.Text = "Finance";
             buttonFinnace.UseVisualStyleBackColor = true;
+            buttonFinnace.Click += buttonFinnace_Click;
             // 
             // pictureBoxViosInterior
             // 
             pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
-            pictureBoxViosInterior.Location = new Point(8, 237);
+            pictureBoxViosInterior.Location = new Point(-4, 234);
             pictureBoxViosInterior.Name = "pictureBoxViosInterior";
-            pictureBoxViosInterior.Size = new Size(331, 201);
+            pictureBoxViosInterior.Size = new Size(331, 222);
             pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxViosInterior.TabIndex = 111;
             pictureBoxViosInterior.TabStop = false;
@@ -112,9 +114,9 @@
             // 
             pictureBoxVios.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBoxVios.Image = (Image)resources.GetObject("pictureBoxVios.Image");
-            pictureBoxVios.Location = new Point(8, 13);
+            pictureBoxVios.Location = new Point(-4, 1);
             pictureBoxVios.Name = "pictureBoxVios";
-            pictureBoxVios.Size = new Size(331, 213);
+            pictureBoxVios.Size = new Size(331, 236);
             pictureBoxVios.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxVios.TabIndex = 108;
             pictureBoxVios.TabStop = false;
@@ -124,8 +126,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button4);
-            Controls.Add(button1);
+            Controls.Add(buttonBK);
+            Controls.Add(buttonCE);
             Controls.Add(label3);
             Controls.Add(buttonFinnace);
             Controls.Add(pictureBoxViosInterior);
@@ -142,8 +144,8 @@
 
         #endregion
 
-        private Button button4;
-        private Button button1;
+        private Button buttonBK;
+        private Button buttonCE;
         private Label label3;
         private Button buttonFinnace;
         private PictureBox pictureBoxViosInterior;

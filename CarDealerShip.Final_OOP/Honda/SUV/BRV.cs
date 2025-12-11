@@ -32,6 +32,7 @@ namespace CarDealerShip.Final_OOP.Honda.SUV
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
+            this.Close();
         }
     }
 }

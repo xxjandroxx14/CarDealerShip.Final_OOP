@@ -35,6 +35,7 @@
             buttonCH = new Button();
             buttonBK = new Button();
             richTextBox1 = new RichTextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -42,9 +43,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1, 0);
+            pictureBox1.Location = new Point(1, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(331, 206);
+            pictureBox1.Size = new Size(351, 235);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 84;
             pictureBox1.TabStop = false;
@@ -52,16 +53,16 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1, 223);
+            pictureBox2.Location = new Point(1, 229);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(351, 203);
+            pictureBox2.Size = new Size(351, 220);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
             // 
             // buttonFN
             // 
-            buttonFN.Location = new Point(398, 326);
+            buttonFN.Location = new Point(410, 329);
             buttonFN.Name = "buttonFN";
             buttonFN.Size = new Size(75, 23);
             buttonFN.TabIndex = 87;
@@ -81,7 +82,7 @@
             // 
             // buttonBK
             // 
-            buttonBK.Location = new Point(660, 366);
+            buttonBK.Location = new Point(670, 376);
             buttonBK.Name = "buttonBK";
             buttonBK.Size = new Size(97, 21);
             buttonBK.TabIndex = 89;
@@ -91,17 +92,27 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(436, 37);
+            richTextBox1.Location = new Point(425, 21);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(271, 195);
+            richTextBox1.Size = new Size(342, 231);
             richTextBox1.TabIndex = 91;
             richTextBox1.Text = "";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(438, 287);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 15);
+            label1.TabIndex = 92;
+            label1.Text = "Payment Method";
             // 
             // NISSAN_Z
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(richTextBox1);
             Controls.Add(buttonBK);
             Controls.Add(buttonCH);
@@ -110,9 +121,11 @@
             Controls.Add(pictureBox1);
             Name = "NISSAN_Z";
             Text = "NISSAN_Z";
+       
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -123,5 +136,6 @@
         private Button buttonCH;
         private Button buttonBK;
         private RichTextBox richTextBox1;
+        private Label label1;
     }
 }

@@ -86,9 +86,9 @@
             // pictureBoxViosInterior
             // 
             pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
-            pictureBoxViosInterior.Location = new Point(8, 237);
+            pictureBoxViosInterior.Location = new Point(-4, 235);
             pictureBoxViosInterior.Name = "pictureBoxViosInterior";
-            pictureBoxViosInterior.Size = new Size(331, 201);
+            pictureBoxViosInterior.Size = new Size(331, 217);
             pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxViosInterior.TabIndex = 159;
             pictureBoxViosInterior.TabStop = false;
@@ -115,9 +115,9 @@
             // 
             pictureBoxVios.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBoxVios.Image = (Image)resources.GetObject("pictureBoxVios.Image");
-            pictureBoxVios.Location = new Point(8, 13);
+            pictureBoxVios.Location = new Point(-4, 0);
             pictureBoxVios.Name = "pictureBoxVios";
-            pictureBoxVios.Size = new Size(331, 213);
+            pictureBoxVios.Size = new Size(331, 238);
             pictureBoxVios.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxVios.TabIndex = 156;
             pictureBoxVios.TabStop = false;
@@ -137,7 +137,7 @@
             Controls.Add(pictureBoxVios);
             Name = "X_FORCE";
             Text = "X_FORCE";
-            Load += X_FORCE_Load;
+       
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).EndInit();
             ResumeLayout(false);

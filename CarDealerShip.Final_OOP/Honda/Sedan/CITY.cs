@@ -17,12 +17,6 @@ namespace CarDealerShip.Final_OOP.Honda.Sedan
             InitializeComponent();
         }
 
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            Menu menu = new Menu();
-            this.Close();
-        }
-
         private void buttonFinnace_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Thank you! We will contact you for further details.",
@@ -33,6 +27,13 @@ namespace CarDealerShip.Final_OOP.Honda.Sedan
         {
             MessageBox.Show("Thank you! We will contact you for further details.",
                           "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void buttonBAck_Click_1(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            this.Close();
+
         }
     }
 }

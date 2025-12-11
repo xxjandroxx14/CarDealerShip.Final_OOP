@@ -29,31 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VELOZ));
-            button1 = new Button();
+            buttonCash = new Button();
             label3 = new Label();
             buttonFinnace = new Button();
             pictureBoxViosInterior = new PictureBox();
             label1 = new Label();
             richTextBox1 = new RichTextBox();
             pictureBoxVios = new PictureBox();
+            buttonBack = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxViosInterior).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxVios).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // buttonCash
             // 
-            button1.ImageAlign = ContentAlignment.BottomCenter;
-            button1.Location = new Point(591, 382);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 22;
-            button1.Text = "Cash";
-            button1.UseVisualStyleBackColor = true;
+            buttonCash.ImageAlign = ContentAlignment.BottomCenter;
+            buttonCash.Location = new Point(434, 399);
+            buttonCash.Name = "buttonCash";
+            buttonCash.Size = new Size(75, 23);
+            buttonCash.TabIndex = 22;
+            buttonCash.Text = "Cash";
+            buttonCash.UseVisualStyleBackColor = true;
+            buttonCash.Click += buttonCash_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(538, 346);
+            label3.Location = new Point(422, 333);
             label3.Name = "label3";
             label3.Size = new Size(99, 15);
             label3.TabIndex = 21;
@@ -62,12 +64,13 @@
             // buttonFinnace
             // 
             buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinnace.Location = new Point(510, 382);
+            buttonFinnace.Location = new Point(434, 360);
             buttonFinnace.Name = "buttonFinnace";
             buttonFinnace.Size = new Size(75, 23);
             buttonFinnace.TabIndex = 20;
             buttonFinnace.Text = "Finance";
             buttonFinnace.UseVisualStyleBackColor = true;
+            buttonFinnace.Click += buttonFinnace_Click;
             // 
             // pictureBoxViosInterior
             // 
@@ -107,12 +110,24 @@
             pictureBoxVios.TabIndex = 16;
             pictureBoxVios.TabStop = false;
             // 
+            // buttonBack
+            // 
+            buttonBack.ImageAlign = ContentAlignment.BottomCenter;
+            buttonBack.Location = new Point(690, 389);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(75, 23);
+            buttonBack.TabIndex = 23;
+            buttonBack.Text = "Back";
+            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
+            // 
             // VELOZ
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(buttonBack);
+            Controls.Add(buttonCash);
             Controls.Add(label3);
             Controls.Add(buttonFinnace);
             Controls.Add(pictureBoxViosInterior);
@@ -129,12 +144,13 @@
 
         #endregion
 
-        private Button button1;
+        private Button buttonCash;
         private Label label3;
         private Button buttonFinnace;
         private PictureBox pictureBoxViosInterior;
         private Label label1;
         private RichTextBox richTextBox1;
         private PictureBox pictureBoxVios;
+        private Button buttonBack;
     }
 }

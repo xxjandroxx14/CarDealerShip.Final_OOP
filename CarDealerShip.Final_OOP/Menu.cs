@@ -265,6 +265,20 @@ namespace CarDealerShip.Final_OOP
             lANCER_EVO.Show();
         }
 
-      
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            this.Close();
+        }
+
+        private void hUILUXToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HILUX hilux = new HILUX();
+            hilux.Show();
+        }
+
+       
+
+        
     }
 }

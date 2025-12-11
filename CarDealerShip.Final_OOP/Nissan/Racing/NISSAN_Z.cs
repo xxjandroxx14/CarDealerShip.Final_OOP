@@ -32,6 +32,11 @@ namespace CarDealerShip.Final_OOP.Nissan.Racing
         private void buttonBK_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
+            this.Close();
         }
+
+       
+
+        
     }
 }

@@ -35,13 +35,14 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             richTextBox1 = new RichTextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // buttonfe
             // 
-            buttonfe.Location = new Point(381, 355);
+            buttonfe.Location = new Point(404, 364);
             buttonfe.Name = "buttonfe";
             buttonfe.Size = new Size(75, 23);
             buttonfe.TabIndex = 43;
@@ -51,7 +52,7 @@
             // 
             // buttonch
             // 
-            buttonch.Location = new Point(381, 384);
+            buttonch.Location = new Point(404, 393);
             buttonch.Name = "buttonch";
             buttonch.Size = new Size(75, 23);
             buttonch.TabIndex = 44;
@@ -61,7 +62,7 @@
             // 
             // buttonBk
             // 
-            buttonBk.Location = new Point(697, 372);
+            buttonBk.Location = new Point(697, 364);
             buttonBk.Name = "buttonBk";
             buttonBk.Size = new Size(75, 23);
             buttonBk.TabIndex = 45;
@@ -72,9 +73,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(12, 12);
+            pictureBox3.Location = new Point(-7, 1);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(331, 213);
+            pictureBox3.Size = new Size(331, 222);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 85;
             pictureBox3.TabStop = false;
@@ -82,9 +83,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 205);
+            pictureBox2.Location = new Point(-7, 220);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(331, 218);
+            pictureBox2.Size = new Size(331, 235);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 86;
             pictureBox2.TabStop = false;
@@ -97,11 +98,21 @@
             richTextBox1.TabIndex = 87;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(404, 328);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 15);
+            label1.TabIndex = 88;
+            label1.Text = "Payment Method";
+            // 
             // CIVICTYPER
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(richTextBox1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
@@ -113,6 +124,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -122,5 +134,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private RichTextBox richTextBox1;
+        private Label label1;
     }
 }

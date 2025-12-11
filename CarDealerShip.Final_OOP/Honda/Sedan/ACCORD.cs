@@ -17,11 +17,6 @@ namespace CarDealerShip.Final_OOP.Honda.Sedan
             InitializeComponent();
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonFinnace_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Thank you! We will contact you for further details.",
@@ -36,7 +31,8 @@ namespace CarDealerShip.Final_OOP.Honda.Sedan
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Menu
+            Menu menu = new Menu();
+            this.Close();
         }
     }
 }

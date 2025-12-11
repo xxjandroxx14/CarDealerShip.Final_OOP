@@ -17,15 +17,6 @@ namespace CarDealerShip.Final_OOP.Mtisubishi.SUV
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void X_FORCE_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void buttonFinnace_Click(object sender, EventArgs e)
         {
@@ -42,6 +33,7 @@ namespace CarDealerShip.Final_OOP.Mtisubishi.SUV
         private void button4_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
+            this.Close();
         }
     }
 }

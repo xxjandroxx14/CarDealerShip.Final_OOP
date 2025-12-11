@@ -35,6 +35,7 @@
             buttonCash = new Button();
             buttonBack = new Button();
             richTextBox1 = new RichTextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -42,9 +43,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(-6, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(264, 222);
+            pictureBox1.Size = new Size(336, 248);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 84;
             pictureBox1.TabStop = false;
@@ -52,16 +53,16 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 240);
+            pictureBox2.Location = new Point(-6, 240);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(310, 182);
+            pictureBox2.Size = new Size(336, 209);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 85;
             pictureBox2.TabStop = false;
             // 
             // buttonFinance
             // 
-            buttonFinance.Location = new Point(391, 336);
+            buttonFinance.Location = new Point(412, 336);
             buttonFinance.Name = "buttonFinance";
             buttonFinance.Size = new Size(75, 23);
             buttonFinance.TabIndex = 86;
@@ -71,7 +72,7 @@
             // 
             // buttonCash
             // 
-            buttonCash.Location = new Point(391, 383);
+            buttonCash.Location = new Point(412, 379);
             buttonCash.Name = "buttonCash";
             buttonCash.Size = new Size(75, 23);
             buttonCash.TabIndex = 87;
@@ -91,17 +92,27 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(391, 26);
+            richTextBox1.Location = new Point(391, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(364, 247);
+            richTextBox1.Size = new Size(397, 249);
             richTextBox1.TabIndex = 91;
-            richTextBox1.Text = "";
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(412, 302);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 15);
+            label1.TabIndex = 92;
+            label1.Text = "Payment Method";
             // 
             // TERRA
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(richTextBox1);
             Controls.Add(buttonBack);
             Controls.Add(buttonCash);
@@ -113,6 +124,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -123,5 +135,6 @@
         private Button buttonCash;
         private Button buttonBack;
         private RichTextBox richTextBox1;
+        private Label label1;
     }
 }

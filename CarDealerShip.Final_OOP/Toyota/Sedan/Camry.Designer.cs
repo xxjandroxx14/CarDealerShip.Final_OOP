@@ -77,6 +77,7 @@
             buttonCash.TabIndex = 53;
             buttonCash.Text = " Cash";
             buttonCash.UseVisualStyleBackColor = true;
+            buttonCash.Click += buttonCash_Click;
             // 
             // buttonBack
             // 
@@ -98,6 +99,7 @@
             buttonFinnance.TabIndex = 55;
             buttonFinnance.Text = "Finance";
             buttonFinnance.UseVisualStyleBackColor = true;
+            buttonFinnance.Click += buttonFinnance_Click;
             // 
             // label1
             // 
