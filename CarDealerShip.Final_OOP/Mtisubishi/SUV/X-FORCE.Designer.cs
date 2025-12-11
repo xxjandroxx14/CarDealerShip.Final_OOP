@@ -44,7 +44,7 @@
             // button4
             // 
             button4.ImageAlign = ContentAlignment.BottomCenter;
-            button4.Location = new Point(709, 396);
+            button4.Location = new Point(713, 396);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 163;
