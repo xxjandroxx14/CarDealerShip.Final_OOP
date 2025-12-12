@@ -62,7 +62,7 @@
             // 
             // buttonBK
             // 
-            buttonBK.Location = new Point(655, 342);
+            buttonBK.Location = new Point(701, 370);
             buttonBK.Name = "buttonBK";
             buttonBK.Size = new Size(75, 23);
             buttonBK.TabIndex = 91;
@@ -72,7 +72,7 @@
             // 
             // buttonFN
             // 
-            buttonFN.Location = new Point(439, 342);
+            buttonFN.Location = new Point(353, 329);
             buttonFN.Name = "buttonFN";
             buttonFN.Size = new Size(75, 23);
             buttonFN.TabIndex = 92;
@@ -82,7 +82,7 @@
             // 
             // buttonCE
             // 
-            buttonCE.Location = new Point(439, 387);
+            buttonCE.Location = new Point(353, 370);
             buttonCE.Name = "buttonCE";
             buttonCE.Size = new Size(75, 23);
             buttonCE.TabIndex = 93;
@@ -92,16 +92,16 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(424, 24);
+            richTextBox1.Location = new Point(353, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(321, 246);
+            richTextBox1.Size = new Size(423, 246);
             richTextBox1.TabIndex = 94;
-            richTextBox1.Text = "";
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(424, 296);
+            label1.Location = new Point(353, 285);
             label1.Name = "label1";
             label1.Size = new Size(99, 15);
             label1.TabIndex = 95;

@@ -45,7 +45,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(386, 238);
+            pictureBox1.Size = new Size(332, 238);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -62,16 +62,16 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(416, 12);
+            richTextBox1.Location = new Point(367, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(372, 253);
+            richTextBox1.Size = new Size(421, 299);
             richTextBox1.TabIndex = 2;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // buttonBack
             // 
             buttonBack.ImageAlign = ContentAlignment.BottomCenter;
-            buttonBack.Location = new Point(688, 379);
+            buttonBack.Location = new Point(695, 403);
             buttonBack.Name = "buttonBack";
             buttonBack.Size = new Size(75, 23);
             buttonBack.TabIndex = 54;
@@ -82,7 +82,7 @@
             // buttonFinnace
             // 
             buttonFinnace.ImageAlign = ContentAlignment.BottomCenter;
-            buttonFinnace.Location = new Point(396, 353);
+            buttonFinnace.Location = new Point(377, 365);
             buttonFinnace.Name = "buttonFinnace";
             buttonFinnace.Size = new Size(75, 23);
             buttonFinnace.TabIndex = 55;
@@ -93,7 +93,7 @@
             // buttonCash
             // 
             buttonCash.ImageAlign = ContentAlignment.BottomCenter;
-            buttonCash.Location = new Point(396, 391);
+            buttonCash.Location = new Point(377, 403);
             buttonCash.Name = "buttonCash";
             buttonCash.Size = new Size(75, 23);
             buttonCash.TabIndex = 56;
@@ -104,7 +104,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(386, 314);
+            label1.Location = new Point(367, 326);
             label1.Name = "label1";
             label1.Size = new Size(99, 15);
             label1.TabIndex = 57;

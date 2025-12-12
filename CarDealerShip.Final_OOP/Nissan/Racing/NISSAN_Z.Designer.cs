@@ -62,7 +62,7 @@
             // 
             // buttonFN
             // 
-            buttonFN.Location = new Point(410, 329);
+            buttonFN.Location = new Point(384, 305);
             buttonFN.Name = "buttonFN";
             buttonFN.Size = new Size(75, 23);
             buttonFN.TabIndex = 87;
@@ -72,7 +72,7 @@
             // 
             // buttonCH
             // 
-            buttonCH.Location = new Point(410, 376);
+            buttonCH.Location = new Point(386, 354);
             buttonCH.Name = "buttonCH";
             buttonCH.Size = new Size(75, 23);
             buttonCH.TabIndex = 88;
@@ -82,7 +82,7 @@
             // 
             // buttonBK
             // 
-            buttonBK.Location = new Point(670, 376);
+            buttonBK.Location = new Point(691, 356);
             buttonBK.Name = "buttonBK";
             buttonBK.Size = new Size(97, 21);
             buttonBK.TabIndex = 89;
@@ -92,16 +92,16 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(425, 21);
+            richTextBox1.Location = new Point(384, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(342, 231);
+            richTextBox1.Size = new Size(404, 231);
             richTextBox1.TabIndex = 91;
-            richTextBox1.Text = "";
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(438, 287);
+            label1.Location = new Point(386, 266);
             label1.Name = "label1";
             label1.Size = new Size(99, 15);
             label1.TabIndex = 92;
@@ -121,7 +121,6 @@
             Controls.Add(pictureBox1);
             Name = "NISSAN_Z";
             Text = "NISSAN_Z";
-       
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

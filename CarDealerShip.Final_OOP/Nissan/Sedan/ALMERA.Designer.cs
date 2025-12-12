@@ -62,7 +62,7 @@
             // 
             // buttonFianance
             // 
-            buttonFianance.Location = new Point(384, 352);
+            buttonFianance.Location = new Point(354, 349);
             buttonFianance.Name = "buttonFianance";
             buttonFianance.Size = new Size(75, 23);
             buttonFianance.TabIndex = 87;
@@ -72,7 +72,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(384, 381);
+            button2.Location = new Point(354, 378);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 88;
@@ -82,7 +82,7 @@
             // 
             // buttonback
             // 
-            buttonback.Location = new Point(575, 364);
+            buttonback.Location = new Point(704, 378);
             buttonback.Name = "buttonback";
             buttonback.Size = new Size(75, 23);
             buttonback.TabIndex = 89;
@@ -92,16 +92,16 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(370, 12);
+            richTextBox1.Location = new Point(354, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(381, 282);
+            richTextBox1.Size = new Size(425, 282);
             richTextBox1.TabIndex = 91;
-            richTextBox1.Text = "";
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(384, 309);
+            label1.Location = new Point(354, 306);
             label1.Name = "label1";
             label1.Size = new Size(99, 15);
             label1.TabIndex = 92;
