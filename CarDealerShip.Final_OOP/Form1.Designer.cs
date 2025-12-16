@@ -35,12 +35,14 @@
             buttonLogin = new Button();
             buttonAdminList = new Button();
             pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // ButtonSignup
             // 
-            ButtonSignup.Location = new Point(36, 214);
+            ButtonSignup.Location = new Point(72, 214);
             ButtonSignup.Name = "ButtonSignup";
             ButtonSignup.Size = new Size(75, 23);
             ButtonSignup.TabIndex = 0;
@@ -50,23 +52,23 @@
             // 
             // textBoxEmail
             // 
-            textBoxEmail.Location = new Point(47, 121);
+            textBoxEmail.Location = new Point(101, 120);
             textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(174, 23);
+            textBoxEmail.Size = new Size(133, 23);
             textBoxEmail.TabIndex = 1;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new Point(47, 164);
+            textBoxPassword.Location = new Point(101, 157);
             textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(174, 23);
+            textBoxPassword.Size = new Size(133, 23);
             textBoxPassword.TabIndex = 2;
             textBoxPassword.Tag = "*";
             textBoxPassword.TextChanged += textBoxPassword_TextChanged;
             // 
             // buttonLogin
             // 
-            buttonLogin.Location = new Point(146, 214);
+            buttonLogin.Location = new Point(170, 214);
             buttonLogin.Name = "buttonLogin";
             buttonLogin.Size = new Size(75, 23);
             buttonLogin.TabIndex = 5;
@@ -87,12 +89,30 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(88, 12);
+            pictureBox1.Location = new Point(110, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 85);
+            pictureBox1.Size = new Size(100, 93);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(36, 120);
+            label1.Name = "label1";
+            label1.Size = new Size(36, 15);
+            label1.TabIndex = 8;
+            label1.Text = "Email";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(15, 157);
+            label2.Name = "label2";
+            label2.Size = new Size(57, 15);
+            label2.TabIndex = 9;
+            label2.Text = "Password";
             // 
             // Form1
             // 
@@ -100,6 +120,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(292, 264);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(buttonAdminList);
             Controls.Add(pictureBox1);
             Controls.Add(buttonLogin);
@@ -121,5 +143,7 @@
         private Button buttonLogin;
         private Button buttonAdminList;
         private PictureBox pictureBox1;
+        private Label label1;
+        private Label label2;
     }
 }
