@@ -50,6 +50,7 @@
             buttonCash.TabIndex = 57;
             buttonCash.Text = "Cash";
             buttonCash.UseVisualStyleBackColor = true;
+            buttonCash.Click += buttonCash_Click_1;
             // 
             // label3
             // 
