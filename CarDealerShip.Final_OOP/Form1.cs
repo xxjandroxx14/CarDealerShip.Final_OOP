@@ -56,7 +56,7 @@ namespace CarDealerShip.Final_OOP
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonLogin_Click_1(object sender, EventArgs e)
         {
             string email = textBoxEmail.Text;
             string password = textBoxPassword.Text;
@@ -95,18 +95,17 @@ namespace CarDealerShip.Final_OOP
             }
         }
 
-        // In Form1.cs
 
         private void buttonAdminList_Click(object sender, EventArgs e)
         {
             UserRepository repository = new UserRepository();
 
-            // 1. Fetch the latest list (which now reflects database deletions/updates)
+
             this._users = repository.GetAllUsers();
 
             ListForm listForm = new ListForm(this);
 
-            // 2. Load the FRESH list into the new ListForm
+
             listForm.LoadUserData(this._users);
 
             listForm.Show();
@@ -116,14 +115,16 @@ namespace CarDealerShip.Final_OOP
         {
             this._users = updatedUsers;
 
-            /* * IMPORTANT: If Form1 contains a DataGridView named 'dataGridViewUsers' 
-             * that displays the user list, uncomment the following block to refresh it.
-            */
-            // if (dataGridViewUsers != null)
-            // {
-            //     dataGridViewUsers.DataSource = null;
-            //     dataGridViewUsers.DataSource = this._users;
-            // }
+
+
         }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+            textBoxPassword.PasswordChar = '*';
+        }
+
+        
     }
 }

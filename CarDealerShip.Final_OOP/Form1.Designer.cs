@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             ButtonSignup = new Button();
             textBoxEmail = new TextBox();
             textBoxPassword = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
             buttonLogin = new Button();
             buttonAdminList = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // ButtonSignup
             // 
-            ButtonSignup.Location = new Point(26, 192);
+            ButtonSignup.Location = new Point(36, 214);
             ButtonSignup.Name = "ButtonSignup";
             ButtonSignup.Size = new Size(75, 23);
             ButtonSignup.TabIndex = 0;
@@ -49,70 +50,65 @@
             // 
             // textBoxEmail
             // 
-            textBoxEmail.Location = new Point(121, 61);
+            textBoxEmail.Location = new Point(47, 121);
             textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(100, 23);
+            textBoxEmail.Size = new Size(174, 23);
             textBoxEmail.TabIndex = 1;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new Point(121, 105);
+            textBoxPassword.Location = new Point(47, 164);
             textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(100, 23);
+            textBoxPassword.Size = new Size(174, 23);
             textBoxPassword.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(49, 61);
-            label1.Name = "label1";
-            label1.Size = new Size(36, 15);
-            label1.TabIndex = 3;
-            label1.Text = "Email";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(44, 108);
-            label2.Name = "label2";
-            label2.Size = new Size(57, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Password";
+            textBoxPassword.Tag = "*";
+            textBoxPassword.TextChanged += textBoxPassword_TextChanged;
             // 
             // buttonLogin
             // 
-            buttonLogin.Location = new Point(172, 192);
+            buttonLogin.Location = new Point(146, 214);
             buttonLogin.Name = "buttonLogin";
             buttonLogin.Size = new Size(75, 23);
             buttonLogin.TabIndex = 5;
             buttonLogin.Text = "Login";
             buttonLogin.UseVisualStyleBackColor = true;
-            buttonLogin.Click += button1_Click;
+            buttonLogin.Click += buttonLogin_Click_1;
             // 
             // buttonAdminList
             // 
             buttonAdminList.BackColor = SystemColors.Control;
             buttonAdminList.Location = new Point(1, 0);
             buttonAdminList.Name = "buttonAdminList";
-            buttonAdminList.Size = new Size(10, 23);
+            buttonAdminList.Size = new Size(10, 10);
             buttonAdminList.TabIndex = 6;
             buttonAdminList.UseVisualStyleBackColor = false;
             buttonAdminList.Click += buttonAdminList_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(88, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 85);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(292, 264);
             Controls.Add(buttonAdminList);
+            Controls.Add(pictureBox1);
             Controls.Add(buttonLogin);
-            Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(textBoxPassword);
             Controls.Add(textBoxEmail);
             Controls.Add(ButtonSignup);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -122,9 +118,8 @@
         private Button ButtonSignup;
         private TextBox textBoxEmail;
         private TextBox textBoxPassword;
-        private Label label1;
-        private Label label2;
         private Button buttonLogin;
         private Button buttonAdminList;
+        private PictureBox pictureBox1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListForm));
             datagridviewClient = new DataGridView();
             buttonDelete = new Button();
             buttonUpdate = new Button();
@@ -42,32 +43,35 @@
             // datagridviewClient
             // 
             datagridviewClient.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            datagridviewClient.Location = new Point(225, 71);
+            datagridviewClient.Location = new Point(234, 68);
             datagridviewClient.Name = "datagridviewClient";
             datagridviewClient.Size = new Size(244, 187);
             datagridviewClient.TabIndex = 1;
             // 
             // buttonDelete
             // 
+            buttonDelete.BackColor = SystemColors.ButtonFace;
             buttonDelete.Location = new Point(291, 275);
             buttonDelete.Name = "buttonDelete";
             buttonDelete.Size = new Size(75, 23);
             buttonDelete.TabIndex = 2;
             buttonDelete.Text = "Delete ";
-            buttonDelete.UseVisualStyleBackColor = true;
+            buttonDelete.UseVisualStyleBackColor = false;
             // 
             // buttonUpdate
             // 
+            buttonUpdate.BackColor = SystemColors.ButtonFace;
             buttonUpdate.Location = new Point(403, 275);
             buttonUpdate.Name = "buttonUpdate";
             buttonUpdate.Size = new Size(75, 23);
             buttonUpdate.TabIndex = 3;
             buttonUpdate.Text = "Update";
-            buttonUpdate.UseVisualStyleBackColor = true;
+            buttonUpdate.UseVisualStyleBackColor = false;
             buttonUpdate.Click += buttonUpdate_Click;
             // 
             // txtEmail
             // 
+            txtEmail.BackColor = SystemColors.ButtonHighlight;
             txtEmail.Location = new Point(102, 111);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(100, 23);
@@ -75,6 +79,7 @@
             // 
             // txtPassword
             // 
+            txtPassword.BackColor = SystemColors.ButtonHighlight;
             txtPassword.Location = new Point(102, 155);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(100, 23);
@@ -83,6 +88,8 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.ControlLight;
+            label1.ForeColor = SystemColors.ActiveCaptionText;
             label1.Location = new Point(48, 111);
             label1.Name = "label1";
             label1.Size = new Size(36, 15);
@@ -92,6 +99,8 @@
             // Password
             // 
             Password.AutoSize = true;
+            Password.BackColor = SystemColors.ControlLight;
+            Password.ForeColor = SystemColors.ActiveCaptionText;
             Password.Location = new Point(39, 155);
             Password.Name = "Password";
             Password.Size = new Size(57, 15);
@@ -100,19 +109,21 @@
             // 
             // buttonBack
             // 
+            buttonBack.BackColor = SystemColors.ButtonFace;
             buttonBack.Location = new Point(183, 275);
             buttonBack.Name = "buttonBack";
             buttonBack.Size = new Size(75, 23);
             buttonBack.TabIndex = 8;
             buttonBack.Text = "Back";
-            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.UseVisualStyleBackColor = false;
             buttonBack.Click += buttonBack_Click;
             // 
             // ListForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(570, 391);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(570, 335);
             Controls.Add(buttonBack);
             Controls.Add(Password);
             Controls.Add(label1);

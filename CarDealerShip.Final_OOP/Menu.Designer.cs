@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             menuStrip1 = new MenuStrip();
             brandsToolStripMenuItem = new ToolStripMenuItem();
             tOYOTAToolStripMenuItem = new ToolStripMenuItem();
@@ -105,7 +106,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { brandsToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(576, 24);
+            menuStrip1.Size = new Size(741, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -139,21 +140,21 @@
             // vIOSToolStripMenuItem
             // 
             vIOSToolStripMenuItem.Name = "vIOSToolStripMenuItem";
-            vIOSToolStripMenuItem.Size = new Size(180, 22);
+            vIOSToolStripMenuItem.Size = new Size(158, 22);
             vIOSToolStripMenuItem.Text = "VIOS";
             vIOSToolStripMenuItem.Click += vIOSToolStripMenuItem_Click;
             // 
             // cORROLAAXIOToolStripMenuItem
             // 
             cORROLAAXIOToolStripMenuItem.Name = "cORROLAAXIOToolStripMenuItem";
-            cORROLAAXIOToolStripMenuItem.Size = new Size(180, 22);
+            cORROLAAXIOToolStripMenuItem.Size = new Size(158, 22);
             cORROLAAXIOToolStripMenuItem.Text = "CORROLA AXIO";
             cORROLAAXIOToolStripMenuItem.Click += cORROLAAXIOToolStripMenuItem_Click;
             // 
             // cAMRYToolStripMenuItem
             // 
             cAMRYToolStripMenuItem.Name = "cAMRYToolStripMenuItem";
-            cAMRYToolStripMenuItem.Size = new Size(180, 22);
+            cAMRYToolStripMenuItem.Size = new Size(158, 22);
             cAMRYToolStripMenuItem.Text = "CAMRY";
             cAMRYToolStripMenuItem.Click += cAMRYToolStripMenuItem_Click;
             // 
@@ -240,7 +241,6 @@
             hONDAToolStripMenuItem.Name = "hONDAToolStripMenuItem";
             hONDAToolStripMenuItem.Size = new Size(137, 22);
             hONDAToolStripMenuItem.Text = "HONDA";
-            
             // 
             // eploreVehiclesToolStripMenuItem
             // 
@@ -393,7 +393,6 @@
             rACINGToolStripMenuItem1.Name = "rACINGToolStripMenuItem1";
             rACINGToolStripMenuItem1.Size = new Size(152, 22);
             rACINGToolStripMenuItem1.Text = "RACING";
-          
             // 
             // nISSANZToolStripMenuItem
             // 
@@ -509,14 +508,14 @@
             // mIRAGEG4ToolStripMenuItem
             // 
             mIRAGEG4ToolStripMenuItem.Name = "mIRAGEG4ToolStripMenuItem";
-            mIRAGEG4ToolStripMenuItem.Size = new Size(180, 22);
+            mIRAGEG4ToolStripMenuItem.Size = new Size(145, 22);
             mIRAGEG4ToolStripMenuItem.Text = "Exlore Vehicle";
             // 
             // mONTEROSPORTToolStripMenuItem
             // 
             mONTEROSPORTToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mIRRAGEG4ToolStripMenuItem });
             mONTEROSPORTToolStripMenuItem.Name = "mONTEROSPORTToolStripMenuItem";
-            mONTEROSPORTToolStripMenuItem.Size = new Size(180, 22);
+            mONTEROSPORTToolStripMenuItem.Size = new Size(145, 22);
             mONTEROSPORTToolStripMenuItem.Text = "SEDAN";
             // 
             // mIRRAGEG4ToolStripMenuItem
@@ -530,7 +529,7 @@
             // 
             sUVToolStripMenuItem4.DropDownItems.AddRange(new ToolStripItem[] { mONTEROSPORTToolStripMenuItem1, xFOCEToolStripMenuItem, oUTLANDERToolStripMenuItem });
             sUVToolStripMenuItem4.Name = "sUVToolStripMenuItem4";
-            sUVToolStripMenuItem4.Size = new Size(180, 22);
+            sUVToolStripMenuItem4.Size = new Size(145, 22);
             sUVToolStripMenuItem4.Text = "SUV";
             // 
             // mONTEROSPORTToolStripMenuItem1
@@ -558,7 +557,7 @@
             // 
             pICKUPToolStripMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { tRITONToolStripMenuItem });
             pICKUPToolStripMenuItem3.Name = "pICKUPToolStripMenuItem3";
-            pICKUPToolStripMenuItem3.Size = new Size(180, 22);
+            pICKUPToolStripMenuItem3.Size = new Size(145, 22);
             pICKUPToolStripMenuItem3.Text = "PICK-UP";
             // 
             // tRITONToolStripMenuItem
@@ -572,13 +571,13 @@
             // 
             rACINGToolStripMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { lANCEREVOToolStripMenuItem });
             rACINGToolStripMenuItem3.Name = "rACINGToolStripMenuItem3";
-            rACINGToolStripMenuItem3.Size = new Size(180, 22);
+            rACINGToolStripMenuItem3.Size = new Size(145, 22);
             rACINGToolStripMenuItem3.Text = "RACING";
             // 
             // lANCEREVOToolStripMenuItem
             // 
             lANCEREVOToolStripMenuItem.Name = "lANCEREVOToolStripMenuItem";
-            lANCEREVOToolStripMenuItem.Size = new Size(180, 22);
+            lANCEREVOToolStripMenuItem.Size = new Size(143, 22);
             lANCEREVOToolStripMenuItem.Text = "LANCER EVO";
             lANCEREVOToolStripMenuItem.Click += lANCEREVOToolStripMenuItem_Click;
             // 
@@ -586,12 +585,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(576, 215);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(741, 274);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Menu";
             Text = "Menu";
-         
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

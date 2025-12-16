@@ -43,9 +43,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(-4, -7);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(368, 204);
+            pictureBox1.Size = new Size(368, 223);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -53,7 +53,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 222);
+            pictureBox2.Location = new Point(-4, 222);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(368, 216);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;

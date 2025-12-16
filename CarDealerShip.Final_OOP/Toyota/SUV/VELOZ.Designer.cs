@@ -77,7 +77,7 @@
             pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
             pictureBoxViosInterior.Location = new Point(4, 237);
             pictureBoxViosInterior.Name = "pictureBoxViosInterior";
-            pictureBoxViosInterior.Size = new Size(372, 201);
+            pictureBoxViosInterior.Size = new Size(372, 212);
             pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxViosInterior.TabIndex = 19;
             pictureBoxViosInterior.TabStop = false;
@@ -125,6 +125,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.RosyBrown;
             ClientSize = new Size(800, 450);
             Controls.Add(buttonBack);
             Controls.Add(buttonCash);

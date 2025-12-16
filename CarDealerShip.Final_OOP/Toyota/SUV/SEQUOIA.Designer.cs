@@ -77,7 +77,7 @@
             pictureBoxViosInterior.Image = (Image)resources.GetObject("pictureBoxViosInterior.Image");
             pictureBoxViosInterior.Location = new Point(4, 237);
             pictureBoxViosInterior.Name = "pictureBoxViosInterior";
-            pictureBoxViosInterior.Size = new Size(372, 201);
+            pictureBoxViosInterior.Size = new Size(372, 216);
             pictureBoxViosInterior.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxViosInterior.TabIndex = 26;
             pictureBoxViosInterior.TabStop = false;

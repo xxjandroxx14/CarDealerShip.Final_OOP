@@ -7,32 +7,32 @@ namespace CarDealerShip.Final_OOP
 {
     public partial class ListForm : Form
     {
-        private List<UserModel> _users;
-        private int _selectedRowIndex = -1;
-        private Form1 _parentForm;
-        private string _originalEmail = string.Empty; 
+        private List<UserModel> Users;
+        private int SelectedRowIndex = -1;
+        private Form1 ClientForm;
+        private string OriginalEmail = string.Empty;
 
         public ListForm(Form1 parent)
         {
             InitializeComponent();
-            _parentForm = parent;
+            ClientForm = parent;
 
             datagridviewClient.CellDoubleClick += datagridviewClient_CellDoubleClick;
-            
+
             buttonDelete.Click += buttonDelete_Click;
-            buttonBack.Click += buttonBack_Click; 
+            buttonBack.Click += buttonBack_Click;
         }
 
-        
+
         public ListForm()
         {
             InitializeComponent();
-         
+
         }
 
         public void LoadUserData(List<UserModel> users)
         {
-            _users = users;
+            Users = users;
             RefreshDataGridView();
         }
 
@@ -40,7 +40,7 @@ namespace CarDealerShip.Final_OOP
         {
             if (e.RowIndex >= 0)
             {
-                _selectedRowIndex = e.RowIndex;
+                SelectedRowIndex = e.RowIndex;
                 DataGridViewRow row = datagridviewClient.Rows[e.RowIndex];
 
                 string email = row.Cells["Email"].Value.ToString();
@@ -48,24 +48,24 @@ namespace CarDealerShip.Final_OOP
 
                 txtEmail.Text = email;
                 txtPassword.Text = password;
-                _originalEmail = email; // ⭐ Capture the original email
+                OriginalEmail = email;
             }
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            if (_selectedRowIndex == -1 || string.IsNullOrEmpty(_originalEmail))
+            if (SelectedRowIndex == -1 || string.IsNullOrEmpty(OriginalEmail))
             {
                 MessageBox.Show("Double-click a user in the table to update.", "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-        
+
             string newEmail = txtEmail.Text.Trim();
             string newPassword = txtPassword.Text;
 
-          
-            UserModel userToUpdate = _users.FirstOrDefault(u => u.Email.Equals(_originalEmail, StringComparison.OrdinalIgnoreCase));
+
+            UserModel userToUpdate = Users.FirstOrDefault(u => u.Email.Equals(OriginalEmail, StringComparison.OrdinalIgnoreCase));
             if (userToUpdate == null)
             {
                 MessageBox.Show("Error: Original user data not found.", "Update Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -81,14 +81,14 @@ namespace CarDealerShip.Final_OOP
                 return;
             }
 
-         
+
             UserRepository repository = new UserRepository();
-            bool updateSuccess = repository.Update(_originalEmail, newEmail, newPassword);
+            bool updateSuccess = repository.Update(OriginalEmail, newEmail, newPassword);
 
             if (updateSuccess)
             {
 
-                _users = repository.GetAllUsers();
+                Users = repository.GetAllUsers();
                 RefreshDataGridView();
                 ClearUpdateFields();
                 MessageBox.Show("Successfully updated.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -100,39 +100,39 @@ namespace CarDealerShip.Final_OOP
         }
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            if (_selectedRowIndex == -1 || string.IsNullOrEmpty(_originalEmail))
+            if (SelectedRowIndex == -1 || string.IsNullOrEmpty(OriginalEmail))
             {
                 MessageBox.Show("Double-click a user in the table to delete.", "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             DialogResult result = MessageBox.Show(
-                $"Are you sure you want to delete the user with email: {_originalEmail}?",
+                $"Are you sure you want to delete the user with email: {OriginalEmail}?",
                 "Confirm Deletion",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 
             if (result == DialogResult.Yes)
             {
-             
+
                 UserRepository repository = new UserRepository();
-                bool deleteSuccess = repository.Delete(_originalEmail);
+                bool deleteSuccess = repository.Delete(OriginalEmail);
 
                 if (deleteSuccess)
                 {
 
-                    _users = repository.GetAllUsers();
+                    Users = repository.GetAllUsers();
 
                     RefreshDataGridView();
                     ClearUpdateFields();
 
 
-                    if (_parentForm != null)
+                    if (ClientForm != null)
                     {
-                        _parentForm.UpdateUserList(_users);
+                        ClientForm.UpdateUserList(Users);
                     }
 
-                    MessageBox.Show($"{_originalEmail} has been deleted.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"{OriginalEmail} has been deleted.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
@@ -144,7 +144,7 @@ namespace CarDealerShip.Final_OOP
         private void RefreshDataGridView()
         {
             datagridviewClient.DataSource = null;
-            datagridviewClient.DataSource = _users;
+            datagridviewClient.DataSource = Users;
             datagridviewClient.Refresh();
         }
 
@@ -152,19 +152,19 @@ namespace CarDealerShip.Final_OOP
         {
             txtEmail.Clear();
             txtPassword.Clear();
-            _selectedRowIndex = -1;
-            _originalEmail = string.Empty;
+            SelectedRowIndex = -1;
+            OriginalEmail = string.Empty;
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
             ClearUpdateFields();
 
-            if (_parentForm != null)
+            if (ClientForm != null)
             {
-                _parentForm.UpdateUserList(_users);
+                ClientForm.UpdateUserList(Users);
 
-                _parentForm.Show();
+                ClientForm.Show();
                 this.Close();
             }
             else
@@ -174,3 +174,4 @@ namespace CarDealerShip.Final_OOP
         }
     }
 }
+       

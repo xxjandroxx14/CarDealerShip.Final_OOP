@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using SQLite;
-using System.Linq; // Added for FirstOrDefault
+using System.Linq; 
 
 namespace CarDealerShip.Final_OOP
 {
